@@ -59,7 +59,7 @@
       --navy-mid: 220 45% 8%;
       --navy-light: 220 40% 13%;
       --navy-border: 220 35% 20%;
-      --gold: 42 75% 54%;
+      --gold: 43 56% 54%;
       --gold-muted: 42 55% 38%;
       --blue-glow: 213 85% 55%;
       --blue-soft: 213 60% 65%;
@@ -232,8 +232,7 @@
   <main>
     <section class="relative min-h-screen flex items-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="hero-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-[hsl(220,52%,5%)]/70"></div>
+        <div class="absolute inset-0" style="background: radial-gradient(ellipse 120% 80% at 50% 40%, #141c2b 0%, #0D1117 70%);"></div>
         <div class="absolute inset-0 opacity-20" style="background: radial-gradient(ellipse 80% 50% at 50% 50%, hsl(213, 85%, 55%), transparent 60%);"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background"></div>
         <div class="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-transparent"></div>
@@ -249,15 +248,15 @@
             We craft high-performance email copy, VSL scripts, and website designs that move audiences from attention to action — with precision.
           </p>
           <div class="flex flex-wrap gap-4 animate-fade-up" style="animation-delay: 0.45s; opacity: 0;">
-            <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3.5 font-body font-medium text-sm bg-gradient-gold text-accent-foreground rounded-sm hover:opacity-90 transition-opacity glow-gold">Start a Project →</a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3.5 font-body font-semibold text-sm rounded-sm hover:opacity-90 transition-opacity" style="background-color:#C9A84C;color:#0D1117;box-shadow:0 0 30px -6px rgba(201,168,76,0.4)">Start a Project →</a>
             <a href="#services" class="inline-flex items-center gap-2 px-7 py-3.5 font-body font-medium text-sm border border-border text-foreground rounded-sm hover:border-primary/40 hover:bg-muted transition-all">View Services</a>
           </div>
         </div>
         <div class="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-px bg-border rounded-sm overflow-hidden animate-fade-up" style="animation-delay: 0.6s; opacity: 0;">
-          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-4xl text-foreground mb-1">4.2×</div><div class="font-body text-xs text-muted-foreground tracking-wide">Avg. Revenue Lift</div></div>
-          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-4xl text-foreground mb-1">68%</div><div class="font-body text-xs text-muted-foreground tracking-wide">Email Open Rate</div></div>
-          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-4xl text-foreground mb-1">91%</div><div class="font-body text-xs text-muted-foreground tracking-wide">Client Retention</div></div>
-          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-4xl text-foreground mb-1">130+</div><div class="font-body text-xs text-muted-foreground tracking-wide">Projects Delivered</div></div>
+          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-5xl font-medium mb-1" style="color:#C9A84C">4.2×</div><div class="font-body text-xs text-muted-foreground tracking-wide">Avg. Revenue Lift</div></div>
+          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-5xl font-medium mb-1" style="color:#C9A84C">68%</div><div class="font-body text-xs text-muted-foreground tracking-wide">Email Open Rate</div></div>
+          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-5xl font-medium mb-1" style="color:#C9A84C">91%</div><div class="font-body text-xs text-muted-foreground tracking-wide">Client Retention</div></div>
+          <div class="bg-navy-mid px-6 py-5"><div class="stat-number text-5xl font-medium mb-1" style="color:#C9A84C">130+</div><div class="font-body text-xs text-muted-foreground tracking-wide">Projects Delivered</div></div>
         </div>
       </div>
     </section>
@@ -273,9 +272,9 @@
           <p class="font-body text-sm text-muted-foreground max-w-xs leading-relaxed">Each service is engineered around measurable outcomes — not deliverables for the sake of deliverables.</p>
         </div>
         <div class="grid lg:grid-cols-3 gap-px bg-border rounded-sm overflow-hidden">
-          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300">
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300" style="border-left:2px solid #C9A84C">
             <div class="flex items-start justify-between mb-6">
-              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">01</span>
+              <span class="font-display text-5xl font-light leading-none select-none" style="color:#C9A84C">01</span>
               <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
             </div>
             <h3 class="font-display text-3xl font-medium text-foreground mb-1">Email Copy</h3>
@@ -293,9 +292,9 @@
               <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Newsletter Strategy</div>
             </div>
           </div>
-          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300">
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300" style="border-left:2px solid #C9A84C">
             <div class="flex items-start justify-between mb-6">
-              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">02</span>
+              <span class="font-display text-5xl font-light leading-none select-none" style="color:#C9A84C">02</span>
               <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
             </div>
             <h3 class="font-display text-3xl font-medium text-foreground mb-1">VSL Scripts</h3>
@@ -313,9 +312,9 @@
               <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Hook & CTA Engineering</div>
             </div>
           </div>
-          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300">
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300" style="border-left:2px solid #C9A84C">
             <div class="flex items-start justify-between mb-6">
-              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">03</span>
+              <span class="font-display text-5xl font-light leading-none select-none" style="color:#C9A84C">03</span>
               <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
             </div>
             <h3 class="font-display text-3xl font-medium text-foreground mb-1">Website Design</h3>
@@ -409,11 +408,11 @@
             </div>
           </div>
           <div class="space-y-0">
-            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">01</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Discovery Call</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">We start with a focused strategy session. We learn your offer, audience, goals, and current gaps — then build a custom engagement plan.</p></div></div></div>
-            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">02</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Strategy & Brief</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Before a word is written or a pixel placed, we deliver a strategic brief aligned to your conversion goals and brand positioning.</p></div></div></div>
-            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">03</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Creation & Craft</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Our writers and designers execute with precision. Each draft goes through internal review before it ever reaches your inbox.</p></div></div></div>
-            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">04</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Review & Refine</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Two rounds of revisions are built into every engagement. We iterate until the work is exactly what it needs to be.</p></div></div></div>
-            <div class="py-7 group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">05</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Deploy & Optimize</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">We don't disappear after delivery. We support implementation, track performance, and optimize based on real data.</p></div></div></div>
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light w-10 flex-shrink-0 transition-colors duration-300" style="color:#C9A84C">01</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Discovery Call</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">We start with a focused strategy session. We learn your offer, audience, goals, and current gaps — then build a custom engagement plan.</p></div></div></div>
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light w-10 flex-shrink-0 transition-colors duration-300" style="color:#C9A84C">02</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Strategy & Brief</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Before a word is written or a pixel placed, we deliver a strategic brief aligned to your conversion goals and brand positioning.</p></div></div></div>
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light w-10 flex-shrink-0 transition-colors duration-300" style="color:#C9A84C">03</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Creation & Craft</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Our writers and designers execute with precision. Each draft goes through internal review before it ever reaches your inbox.</p></div></div></div>
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light w-10 flex-shrink-0 transition-colors duration-300" style="color:#C9A84C">04</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Review & Refine</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Two rounds of revisions are built into every engagement. We iterate until the work is exactly what it needs to be.</p></div></div></div>
+            <div class="py-7 group"><div class="flex gap-6"><div class="font-display text-2xl font-light w-10 flex-shrink-0 transition-colors duration-300" style="color:#C9A84C">05</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Deploy & Optimize</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">We don't disappear after delivery. We support implementation, track performance, and optimize based on real data.</p></div></div></div>
           </div>
         </div>
       </div>
