@@ -1,3 +1,70 @@
-@tailwind base
-@tailwind components
-@tailwind utilities
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-deep: #0D1117;
+  --bg-surface: #161B24;
+  --bg-raised: #1E2530;
+  --gold: #C9A84C;
+  --gold-light: #E8D48B;
+  --ivory: #F5F0E8;
+  --silver: #A0A0AB;
+  --slate: #6B7280;
+  --ash: #4A4F5C;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: auto; /* letting the scroll engine handle smoothness */
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--ivory);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--bg-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* gold shimmer gradient for accent text */
+.gold-shine {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 45%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* fading horizontal rule */
+.edge-fade {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--ash) 20%, var(--ash) 80%, transparent 100%);
+}
+
+.edge-fade-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 20%, var(--gold) 80%, transparent 100%);
+  opacity: 0.25;
+}
+
+/* pin spacer override — prevent layout jump during pinning */
+.pin-spacer {
+  padding: 0 !important;
+}
+
+input, textarea, select {
+  color-scheme: dark;
+}
