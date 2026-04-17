@@ -1,3 +1,2 @@
-// Supabase config — do not commit real keys, use config.local.js for local dev
-window.SUPABASE_URL = '';
-window.SUPABASE_ANON_KEY = '';
+window.SUPABASE_URL = 'https://qmhcgtpacrbthqnucmre.supabase.co';
+window.SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFtaGNndHBhY3JidGhxbnVjbXJlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE2MzI2OTMsImV4cCI6MjA4NzIwODY5M30.5315M2SypKGBbyJTNM099suq6jywEciVR21OC_ytL1I';
