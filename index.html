@@ -7,10 +7,12 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23d4af37'>Q</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"></noscript>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
   <script src="config.js"></script>
   <script type="application/ld+json">
   {
@@ -278,7 +280,7 @@
   <main>
     <section class="relative min-h-screen flex items-center overflow-hidden">
       <div class="absolute inset-0 z-0">
-        <img src="hero-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" />
+        <img src="hero-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" decoding="async" />
         <div class="absolute inset-0 bg-[hsl(220,52%,5%)]/70"></div>
         <div class="absolute inset-0 opacity-20" style="background: radial-gradient(ellipse 80% 50% at 50% 50%, hsl(213, 85%, 55%), transparent 60%);"></div>
         <div class="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background"></div>
@@ -702,7 +704,6 @@
   </script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      if (typeof lucide !== "undefined") lucide.createIcons();
       var y = document.getElementById("year");
       if (y) y.textContent = new Date().getFullYear();
 
