@@ -1,3 +1,4 @@
+node_modules/
 config.local.js
 *.local
 .DS_Store
