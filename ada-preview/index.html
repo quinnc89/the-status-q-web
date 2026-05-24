@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Q | Words That Convert. Designs That Close.</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Words That Convert. Designs That Close." />
+  <meta property="og:description" content="Email funnels. Landing pages. AI automation. Built for DTC brands that are done leaving revenue on the table." />
+  <meta property="og:url" content="https://www.thestatusq.io/" />
+  <meta property="og:site_name" content="TheStatusQ" />
+  <meta property="og:image" content="https://www.thestatusq.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Words That Convert. Designs That Close." />
+  <meta name="twitter:description" content="Email funnels. Landing pages. AI automation. Built for DTC brands that are done leaving revenue on the table." />
+  <meta name="twitter:image" content="https://www.thestatusq.io/og-image.png" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23d4af37'>Q</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"></noscript>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="config.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TheStatusQ",
+    "url": "https://thestatusq.io",
+    "logo": "https://thestatusq.io/hero-bg.jpg",
+    "description": "Premium copywriting and design studio helping businesses of all sizes — from brick and mortar stores to online brands — convert more customers through email copy, VSL scripts, and high-performance website design.",
+    "serviceType": ["Email Copywriting", "VSL Script Writing", "Website Design", "Conversion Rate Optimization"],
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Email Copy", "description": "Revenue-generating email sequences for businesses looking to nurture leads and drive sales." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "VSL Scripts", "description": "Video sales letter scripts built on proven psychological frameworks for any business or offer." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Design", "description": "High-converting website design for businesses of all sizes rooted in consumer psychology and performance principles." } }
+      ]
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --background: 220 52% 5%;
+      --foreground: 210 30% 94%;
+      --card: 220 45% 8%;
+      --card-foreground: 210 30% 94%;
+      --popover: 220 45% 8%;
+      --popover-foreground: 210 30% 94%;
+      --primary: 213 85% 55%;
+      --primary-foreground: 220 52% 5%;
+      --secondary: 220 42% 12%;
+      --secondary-foreground: 210 30% 90%;
+      --muted: 220 35% 14%;
+      --muted-foreground: 215 20% 55%;
+      --accent: 42 75% 54%;
+      --accent-foreground: 220 52% 5%;
+      --destructive: 0 62% 50%;
+      --destructive-foreground: 210 30% 94%;
+      --border: 220 35% 16%;
+      --input: 220 35% 14%;
+      --ring: 213 85% 55%;
+      --radius: 0.375rem;
+      --navy-deep: 220 52% 5%;
+      --navy-mid: 220 45% 8%;
+      --navy-light: 220 40% 13%;
+      --navy-border: 220 35% 20%;
+      --gold: 42 75% 54%;
+      --gold-muted: 42 55% 38%;
+      --blue-glow: 213 85% 55%;
+      --blue-soft: 213 60% 65%;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --gradient-hero: linear-gradient(135deg, hsl(220, 52%, 5%) 0%, hsl(215, 65%, 10%) 50%, hsl(220, 52%, 5%) 100%);
+      --gradient-card: linear-gradient(145deg, hsl(220, 45%, 9%) 0%, hsl(220, 40%, 7%) 100%);
+      --gradient-gold: linear-gradient(135deg, hsl(42, 75%, 54%), hsl(38, 70%, 45%));
+      --gradient-blue: linear-gradient(135deg, hsl(213, 85%, 55%), hsl(225, 80%, 45%));
+      --gradient-overlay: linear-gradient(to bottom, transparent 0%, hsl(220, 52%, 5%) 100%);
+      --shadow-card: 0 4px 24px -4px hsl(220 52% 3% / 0.8), 0 0 0 1px hsl(220 35% 20% / 0.4);
+      --shadow-glow: 0 0 40px -8px hsl(213 85% 55% / 0.35);
+      --shadow-gold-glow: 0 0 30px -6px hsl(42 75% 54% / 0.4);
+      --sidebar-background: 220 45% 8%;
+      --sidebar-foreground: 210 30% 94%;
+      --sidebar-primary: 213 85% 55%;
+      --sidebar-primary-foreground: 220 52% 5%;
+      --sidebar-accent: 220 40% 13%;
+      --sidebar-accent-foreground: 210 30% 90%;
+      --sidebar-border: 220 35% 16%;
+      --sidebar-ring: 213 85% 55%;
+    }
+    * { border-color: hsl(var(--border)); }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.01em; }
+    .font-display { font-family: var(--font-display); }
+    .font-body { font-family: var(--font-body); }
+    .gradient-text-gold {
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .gradient-text-blue {
+      background: var(--gradient-blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .card-glass {
+      background: var(--gradient-card);
+      border: 1px solid hsl(var(--navy-border));
+      box-shadow: var(--shadow-card);
+    }
+    .glow-blue { box-shadow: var(--shadow-glow); }
+    .glow-gold { box-shadow: var(--shadow-gold-glow); }
+    .text-gold { color: hsl(var(--gold)); }
+    .bg-gold { background-color: hsl(var(--gold)); }
+    .border-gold { border-color: hsl(var(--gold)); }
+    .bg-navy-mid { background-color: hsl(var(--navy-mid)); }
+    .bg-navy-light { background-color: hsl(var(--navy-light)); }
+    .bg-gradient-blue { background: var(--gradient-blue); }
+    .bg-gradient-gold { background: var(--gradient-gold); }
+    .divider-gold {
+      height: 1px;
+      background: linear-gradient(to right, transparent, hsl(var(--gold) / 0.4), transparent);
+    }
+    .divider-blue {
+      height: 1px;
+      background: linear-gradient(to right, transparent, hsl(var(--blue-glow) / 0.4), transparent);
+    }
+    .stat-number { font-family: var(--font-display); font-weight: 300; letter-spacing: -0.02em; }
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: hsl(var(--gold));
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-up { animation: fadeUp 0.7s ease forwards; }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animate-fade-in { animation: fadeIn 0.9s ease forwards; }
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(36px) scale(0.96);
+      filter: blur(3px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+                  filter 0.6s ease;
+    }
+    .scroll-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+    @keyframes orbPulse {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.18; }
+      33% { transform: scale(1.12) translate(3%, -4%); opacity: 0.24; }
+      66% { transform: scale(0.94) translate(-2%, 3%); opacity: 0.14; }
+    }
+    @keyframes orbDrift {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.12; }
+      40% { transform: scale(1.08) translate(-4%, 5%); opacity: 0.18; }
+      75% { transform: scale(0.96) translate(5%, -3%); opacity: 0.09; }
+    }
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      filter: blur(80px);
+      z-index: 2;
+    }
+    .hero-orb-gold {
+      width: 640px;
+      height: 640px;
+      right: -8%;
+      top: 5%;
+      background: radial-gradient(ellipse, hsl(42, 75%, 54%) 0%, transparent 70%);
+      animation: orbPulse 9s ease-in-out infinite;
+    }
+    .hero-orb-blue {
+      width: 480px;
+      height: 480px;
+      right: 18%;
+      top: 30%;
+      background: radial-gradient(ellipse, hsl(213, 85%, 55%) 0%, transparent 70%);
+      animation: orbDrift 12s ease-in-out infinite;
+    }
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: opacity 0.25s ease, visibility 0.25s ease;
+    }
+    .modal-backdrop.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .modal-backdrop-inner {
+      width: 100%;
+      max-width: 32rem;
+      max-height: calc(100vh - 3rem);
+      overflow-y: auto;
+    }
+    .modal-panel {
+      position: relative;
+      background: linear-gradient(145deg, hsl(220, 45%, 9%) 0%, hsl(220, 40%, 6%) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 0.5rem;
+      padding: 2rem;
+      box-shadow: 0 0 40px -8px rgba(212, 175, 55, 0.15), 0 4px 24px rgba(0, 0, 0, 0.5);
+    }
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 2.25rem;
+      height: 2.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      line-height: 1;
+      color: #9ca3af;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.25rem;
+      cursor: pointer;
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+    .modal-close:hover {
+      color: #d4af37;
+      border-color: rgba(212, 175, 55, 0.4);
+      background: rgba(212, 175, 55, 0.08);
+    }
+    .input-gold:focus {
+      outline: none;
+      border-color: hsl(var(--gold));
+      box-shadow: 0 0 0 2px hsl(var(--gold) / 0.25);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-background text-foreground">
+
+  <nav id="site-nav" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <a href="#" class="font-display text-xl font-semibold tracking-tight text-foreground">
+          The<span class="gradient-text-gold">StatusQ</span>
+        </a>
+        <span class="section-label border border-gold/30 px-2 py-0.5 rounded-sm hidden sm:inline">Agency</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="font-body text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide">Services</a>
+        <a href="#results" class="font-body text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide">Results</a>
+        <a href="#process" class="font-body text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide">Process</a>
+        <a href="#testimonials" class="font-body text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide">Testimonials</a>
+        <a href="#contact" class="font-body text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 tracking-wide">Contact</a>
+      </div>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 px-5 py-2 text-sm font-medium font-body bg-gradient-gold text-accent-foreground rounded-sm hover:opacity-90 transition-opacity glow-gold">Get Started</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="hero-bg.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" fetchpriority="high" decoding="async" />
+        <div class="absolute inset-0 bg-[hsl(220,52%,5%)]/70"></div>
+        <div class="absolute inset-0 opacity-20" style="background: radial-gradient(ellipse 80% 50% at 50% 50%, hsl(213, 85%, 55%), transparent 60%);"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-background via-background/30 to-transparent"></div>
+      </div>
+      <div class="hero-orb hero-orb-gold" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-blue" aria-hidden="true"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-20 w-full">
+        <div class="max-w-3xl">
+          <p class="section-label mb-6 animate-fade-up" style="animation-delay: 0.1s; opacity: 0;">◆ Premium Copywriting & Design Studio</p>
+          <h1 class="font-display text-6xl sm:text-7xl lg:text-8xl font-light leading-[0.95] text-foreground mb-6 animate-fade-up" style="animation-delay: 0.2s; opacity: 0;">
+            Words That <span class="italic gradient-text-gold">Convert.</span><br>
+            Designs That <span class="italic gradient-text-blue">Close.</span>
+          </h1>
+          <p class="font-body text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl mb-10 animate-fade-up" style="animation-delay: 0.35s; opacity: 0;">
+            We craft high-performance email copy, VSL scripts, and website designs that move audiences from attention to action — with precision.
+          </p>
+          <div class="flex flex-wrap gap-4 animate-fade-up" style="animation-delay: 0.45s; opacity: 0;">
+            <a href="#contact" class="inline-flex items-center gap-2 px-7 py-3.5 font-body font-medium text-sm bg-gradient-gold text-accent-foreground rounded-sm hover:opacity-90 transition-opacity glow-gold">Start a Project →</a>
+            <a href="#services" class="inline-flex items-center gap-2 px-7 py-3.5 font-body font-medium text-sm border border-border text-foreground rounded-sm hover:border-primary/40 hover:bg-muted transition-all">View Services</a>
+          </div>
+        </div>
+        <div class="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-px bg-border rounded-sm overflow-hidden">
+          <div class="bg-navy-mid px-6 py-5 scroll-reveal" style="transition-delay: 0s;"><div class="stat-number text-4xl text-foreground mb-1">4.2×</div><div class="font-body text-xs text-muted-foreground tracking-wide">Avg. Revenue Lift</div></div>
+          <div class="bg-navy-mid px-6 py-5 scroll-reveal" style="transition-delay: 0.12s;"><div class="stat-number text-4xl text-foreground mb-1">68%</div><div class="font-body text-xs text-muted-foreground tracking-wide">Email Open Rate</div></div>
+          <div class="bg-navy-mid px-6 py-5 scroll-reveal" style="transition-delay: 0.24s;"><div class="stat-number text-4xl text-foreground mb-1">91%</div><div class="font-body text-xs text-muted-foreground tracking-wide">Client Retention</div></div>
+          <div class="bg-navy-mid px-6 py-5 scroll-reveal" style="transition-delay: 0.36s;"><div class="stat-number text-4xl text-foreground mb-1">130+</div><div class="font-body text-xs text-muted-foreground tracking-wide">Projects Delivered</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-28 bg-background relative">
+      <div class="divider-gold mb-0"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16 scroll-reveal">
+          <div>
+            <p class="section-label mb-4">◆ What We Do</p>
+            <h2 class="font-display text-5xl sm:text-6xl font-light text-foreground leading-tight">Three Services.<br><span class="italic gradient-text-gold">One Standard.</span></h2>
+          </div>
+          <p class="font-body text-sm text-muted-foreground max-w-xs leading-relaxed">Each service is engineered around measurable outcomes — not deliverables for the sake of deliverables.</p>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-px bg-border rounded-sm overflow-hidden">
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300 scroll-reveal" style="transition-delay: 0s;">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">01</span>
+              <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
+            </div>
+            <h3 class="font-display text-3xl font-medium text-foreground mb-1">Email Copy</h3>
+            <p class="section-label mb-5 text-[0.65rem]">Revenue-Generating Sequences</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed mb-8">Strategic email campaigns engineered to nurture, convert, and retain. From welcome sequences to launch campaigns — every word earns its place.</p>
+            <div class="grid grid-cols-3 gap-2 mb-8">
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">52–68%</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Avg. Open Rate</div></div>
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">+3.4×</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">CTR vs Industry</div></div>
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">$2.10+</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Revenue per Email</div></div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Welcome & Onboarding Sequences</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Sales & Launch Campaigns</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Abandoned Cart & Winback</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Newsletter Strategy</div>
+            </div>
+          </div>
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300 scroll-reveal" style="transition-delay: 0.12s;">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">02</span>
+              <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
+            </div>
+            <h3 class="font-display text-3xl font-medium text-foreground mb-1">VSL Scripts</h3>
+            <p class="section-label mb-5 text-[0.65rem] ">Video Sales Letters That Sell</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed mb-8">Precision-crafted scripts that hold attention and drive purchases. Built on proven psychological frameworks and tailored to your offer.</p>
+            <div class="grid grid-cols-3 gap-2 mb-8">
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">74%</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Avg. View Rate</div></div>
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">+180%</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Conversion Lift</div></div>
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">31 days</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Script-to-Close</div></div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Long-Form VSL Scripts</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Short-Form Ad Scripts</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Webinar & Funnel Scripts</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Hook & CTA Engineering</div>
+            </div>
+          </div>
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300 scroll-reveal" style="transition-delay: 0.24s;">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">03</span>
+              <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
+            </div>
+            <h3 class="font-display text-3xl font-medium text-foreground mb-1">Website Design</h3>
+            <p class="section-label mb-5 text-[0.65rem]">Sites Built to Convert</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed mb-8">High-converting website design rooted in consumer psychology, brand strategy, and performance principles. No filler — only function.</p>
+            <div class="grid grid-cols-3 gap-2 mb-8">
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">+220%</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Avg. CR Improvement</div></div>
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">−38%</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Bounce Rate Drop</div></div>
+              <div class="bg-background/60 rounded-sm p-3 text-center"><div class="font-display text-xl font-medium text-foreground">3–4 wks</div><div class="font-body text-[0.6rem] text-muted-foreground leading-tight mt-1">Time-to-Launch</div></div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Landing & Sales Pages</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Full Brand Websites</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Funnel Architecture</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>CRO Audits & Rebuilds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         AI AUTOMATION — added April 2026
+         ============================================================ -->
+    <section id="ai-automation" class="py-28 relative" style="background-color: hsl(var(--navy-mid));">
+      <div class="divider-blue mb-0"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16 scroll-reveal">
+          <div>
+            <p class="section-label mb-4">◆ AI Automation</p>
+            <h2 class="font-display text-5xl sm:text-6xl font-light text-foreground leading-tight">AI that works<br><span class="italic gradient-text-gold">while you sleep.</span></h2>
+          </div>
+          <p class="font-body text-sm text-muted-foreground max-w-xs leading-relaxed">Voice agents, automation, and email flows working as a single system. Every tier builds on the last.</p>
+        </div>
+
+        <!-- stack pill bar -->
+        <div class="flex flex-wrap gap-2 mb-12 scroll-reveal">
+          <span class="px-3 py-1 rounded-sm border border-white/10 text-muted-foreground text-xs font-body tracking-wide">Vapi</span>
+          <span class="px-3 py-1 rounded-sm border border-white/10 text-muted-foreground text-xs font-body tracking-wide">ElevenLabs</span>
+          <span class="px-3 py-1 rounded-sm border border-white/10 text-muted-foreground text-xs font-body tracking-wide">Twilio</span>
+          <span class="px-3 py-1 rounded-sm border border-white/10 text-muted-foreground text-xs font-body tracking-wide">Make.com</span>
+          <span class="px-3 py-1 rounded-sm border border-white/10 text-muted-foreground text-xs font-body tracking-wide">Klaviyo</span>
+        </div>
+
+        <div class="grid lg:grid-cols-4 gap-px bg-border rounded-sm overflow-hidden">
+
+          <!-- Tier 1 -->
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300 scroll-reveal" style="transition-delay: 0s;">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">01</span>
+              <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
+            </div>
+            <h3 class="font-display text-3xl font-medium text-foreground mb-1">AI Receptionist</h3>
+            <p class="section-label mb-5 text-[0.65rem]">Tier 1</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed mb-8">A branded voice agent answers every call, qualifies leads, and books appointments — 24/7, zero missed calls.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Vapi voice AI</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Twilio telephony</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>ElevenLabs voice cloning</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Monthly branded report</div>
+            </div>
+          </div>
+
+          <!-- Tier 2 -->
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300 scroll-reveal" style="transition-delay: 0.1s;">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">02</span>
+              <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
+            </div>
+            <h3 class="font-display text-3xl font-medium text-foreground mb-1">+ Automation</h3>
+            <p class="section-label mb-5 text-[0.65rem]">Tier 2</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed mb-8">Everything in Tier 1, plus automated follow-up sequences that push leads through your pipeline hands-free.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Everything in Tier 1</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Make.com automation</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>CRM integration</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>SMS follow-up sequences</div>
+            </div>
+          </div>
+
+          <!-- Tier 3 — featured -->
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300 scroll-reveal" style="border-top: 2px solid hsl(var(--gold)); box-shadow: 0 0 48px -12px hsl(var(--gold) / 0.25); transition-delay: 0.2s;">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">03</span>
+              <div class="flex items-center gap-2">
+                <span class="section-label border border-gold/40 px-2 py-0.5 rounded-sm text-[0.6rem]">Most Popular</span>
+                <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
+              </div>
+            </div>
+            <h3 class="font-display text-3xl font-medium text-foreground mb-1">Full AI Stack</h3>
+            <p class="section-label mb-5 text-[0.65rem]">Tier 3</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed mb-8">Voice AI, automation, and email working together. Leads enter the top, closed deals come out the bottom.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Everything in Tier 2</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Klaviyo email flows</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Lead scoring logic</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Unified pipeline dashboard</div>
+            </div>
+          </div>
+
+          <!-- Tier 4 -->
+          <div class="bg-navy-mid p-8 group hover:bg-navy-light transition-colors duration-300 scroll-reveal" style="transition-delay: 0.3s;">
+            <div class="flex items-start justify-between mb-6">
+              <span class="font-display text-5xl font-light text-muted-foreground/30 leading-none select-none">04</span>
+              <div class="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity"><div class="w-2 h-2 rounded-full bg-accent-foreground"></div></div>
+            </div>
+            <h3 class="font-display text-3xl font-medium text-foreground mb-1">Flagship</h3>
+            <p class="section-label mb-5 text-[0.65rem]">Tier 4</p>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed mb-8">The full picture. AI voice + automation + email, paired with our complete funnel and copywriting package.</p>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Everything in Tier 3</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Full funnel build</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Email retainer included</div>
+              <div class="flex items-center gap-2 font-body text-xs text-muted-foreground"><div class="w-1 h-1 rounded-full bg-gold flex-shrink-0"></div>Priority support + reporting</div>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="mt-8 font-body text-xs text-muted-foreground text-center">
+          Every tier includes setup, onboarding, and a monthly performance report. &nbsp;<a href="#contact" class="text-gold hover:opacity-80 transition-opacity underline underline-offset-2">Book a call to scope your build.</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="results" class="py-28 bg-navy-mid relative">
+      <div class="divider-blue mb-0"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="mb-16 scroll-reveal">
+          <p class="section-label mb-4">◆ Proven Results</p>
+          <h2 class="font-display text-5xl sm:text-6xl font-light text-foreground">Data Doesn't Lie.<br><span class="italic gradient-text-blue">Neither Do We.</span></h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-6 mb-6 scroll-reveal">
+          <div class="card-glass rounded-sm p-6">
+            <div class="flex items-start justify-between mb-6">
+              <div><p class="section-label mb-1">Email Performance</p><h3 class="font-display text-2xl font-light text-foreground">Open Rate Uplift</h3></div>
+              <div class="text-right"><div class="font-display text-4xl font-light text-foreground">+214%</div><div class="font-body text-xs text-muted-foreground">vs. industry avg</div></div>
+            </div>
+            <div class="h-[220px] flex items-end gap-2 px-2" style="border-bottom: 1px solid hsl(220, 35%, 18%);">
+              <div class="flex-1 bg-primary/20 rounded-t h-[54%]"></div><div class="flex-1 bg-primary/30 rounded-t h-[57%]"></div><div class="flex-1 bg-primary/25 rounded-t h-[59%]"></div><div class="flex-1 bg-primary/35 rounded-t h-[62%]"></div><div class="flex-1 bg-primary/40 rounded-t h-[65%]"></div><div class="flex-1 bg-primary/45 rounded-t h-[64%]"></div><div class="flex-1 bg-primary/50 rounded-t h-[68%]"></div><div class="flex-1 bg-primary/55 rounded-t h-[71%]"></div>
+            </div>
+            <div class="flex justify-between mt-2 font-body text-[11px] text-muted-foreground">Jan Feb Mar Apr May Jun Jul Aug</div>
+          </div>
+          <div class="card-glass rounded-sm p-6">
+            <div class="flex items-start justify-between mb-6">
+              <div><p class="section-label mb-1">Revenue Impact</p><h3 class="font-display text-2xl font-light text-foreground">Before vs. After</h3></div>
+              <div class="text-right"><div class="font-display text-4xl font-light text-foreground">4.2×</div><div class="font-body text-xs text-muted-foreground">avg. revenue lift</div></div>
+            </div>
+            <div class="h-[220px] flex items-end gap-4 px-2" style="border-bottom: 1px solid hsl(220, 35%, 18%);">
+              <div class="flex-1 flex flex-col gap-2 justify-end"><div class="h-8 rounded-sm bg-primary"></div><div class="h-12 rounded-sm bg-muted"></div><span class="font-body text-xs text-muted-foreground text-center">Q1</span></div>
+              <div class="flex-1 flex flex-col gap-2 justify-end"><div class="h-10 rounded-sm bg-primary"></div><div class="h-8 rounded-sm bg-muted"></div><span class="font-body text-xs text-muted-foreground text-center">Q2</span></div>
+              <div class="flex-1 flex flex-col gap-2 justify-end"><div class="h-12 rounded-sm bg-primary"></div><div class="h-8 rounded-sm bg-muted"></div><span class="font-body text-xs text-muted-foreground text-center">Q3</span></div>
+              <div class="flex-1 flex flex-col gap-2 justify-end"><div class="h-14 rounded-sm bg-primary"></div><div class="h-8 rounded-sm bg-muted"></div><span class="font-body text-xs text-muted-foreground text-center">Q4</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-6 scroll-reveal">
+          <div class="card-glass rounded-sm p-6 lg:col-span-1">
+            <p class="section-label mb-2">Performance Index</p>
+            <h3 class="font-display text-2xl font-light text-foreground mb-4">Service Scores</h3>
+            <div class="space-y-3">
+              <div class="flex items-center justify-between text-xs font-body"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="text-muted-foreground">VSL Conversion</span></div><span class="text-foreground font-medium">74%</span></div>
+              <div class="flex items-center justify-between text-xs font-body"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div><span class="text-muted-foreground">Email CTR</span></div><span class="text-foreground font-medium">58%</span></div>
+              <div class="flex items-center justify-between text-xs font-body"><div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-blue-soft"></div><span class="text-muted-foreground">Web CR</span></div><span class="text-foreground font-medium">82%</span></div>
+            </div>
+          </div>
+          <div class="card-glass rounded-sm p-6 lg:col-span-2 grid grid-cols-2 gap-4 content-start">
+            <p class="section-label col-span-2 mb-0">Key Outcomes</p>
+            <div class="bg-background/50 rounded-sm p-4"><div class="font-display text-3xl font-light text-foreground">130+</div><div class="font-body text-xs font-medium text-foreground/80 mt-1">Projects Delivered</div><div class="font-body text-[0.65rem] text-muted-foreground">Across 6 industries</div></div>
+            <div class="bg-background/50 rounded-sm p-4"><div class="font-display text-3xl font-light text-foreground">91%</div><div class="font-body text-xs font-medium text-foreground/80 mt-1">Client Retention</div><div class="font-body text-[0.65rem] text-muted-foreground">Year-over-year</div></div>
+            <div class="bg-background/50 rounded-sm p-4"><div class="font-display text-3xl font-light text-foreground">3.8×</div><div class="font-body text-xs font-medium text-foreground/80 mt-1">Avg. ROAS</div><div class="font-body text-[0.65rem] text-muted-foreground">On email campaigns</div></div>
+            <div class="bg-background/50 rounded-sm p-4"><div class="font-display text-3xl font-light text-foreground">22 days</div><div class="font-body text-xs font-medium text-foreground/80 mt-1">Avg. Launch Time</div><div class="font-body text-[0.65rem] text-muted-foreground">From brief to live</div></div>
+            <div class="bg-background/50 rounded-sm p-4"><div class="font-display text-3xl font-light text-foreground">$2.10+</div><div class="font-body text-xs font-medium text-foreground/80 mt-1">Revenue per Email</div><div class="font-body text-[0.65rem] text-muted-foreground">Industry avg: $0.48</div></div>
+            <div class="bg-background/50 rounded-sm p-4"><div class="font-display text-3xl font-light text-foreground">Top 5%</div><div class="font-body text-xs font-medium text-foreground/80 mt-1">VSL Completion</div><div class="font-body text-[0.65rem] text-muted-foreground">vs. platform benchmarks</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="py-28 bg-background relative">
+      <div class="divider-gold mb-0"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-start scroll-reveal">
+          <div class="lg:sticky lg:top-32">
+            <p class="section-label mb-4">◆ How We Work</p>
+            <h2 class="font-display text-5xl sm:text-6xl font-light text-foreground mb-6">A Process Built<br>for <span class="italic gradient-text-gold">Precision.</span></h2>
+            <p class="font-body text-sm text-muted-foreground leading-relaxed max-w-sm">No guesswork, no generic templates. Every engagement follows a rigorous framework designed to eliminate waste and maximize output quality.</p>
+            <div class="mt-10 card-glass rounded-sm p-6">
+              <p class="section-label mb-4">Typical Timeline</p>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between font-body text-sm"><span class="text-muted-foreground">Email Sequence (5–8 emails)</span><span class="text-gold font-medium">7–10 days</span></div>
+                <div class="flex items-center justify-between font-body text-sm"><span class="text-muted-foreground">VSL Script (long-form)</span><span class="text-gold font-medium">10–14 days</span></div>
+                <div class="flex items-center justify-between font-body text-sm"><span class="text-muted-foreground">Website Design</span><span class="text-gold font-medium">3–4 weeks</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-0">
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">01</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Discovery Call</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">We start with a focused strategy session. We learn your offer, audience, goals, and current gaps — then build a custom engagement plan.</p></div></div></div>
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">02</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Strategy & Brief</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Before a word is written or a pixel placed, we deliver a strategic brief aligned to your conversion goals and brand positioning.</p></div></div></div>
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">03</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Creation & Craft</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Our writers and designers execute with precision. Each draft goes through internal review before it ever reaches your inbox.</p></div></div></div>
+            <div class="py-7 border-b border-border group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">04</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Review & Refine</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Two rounds of revisions are built into every engagement. We iterate until the work is exactly what it needs to be.</p></div></div></div>
+            <div class="py-7 group"><div class="flex gap-6"><div class="font-display text-2xl font-light text-muted-foreground/40 w-10 flex-shrink-0 group-hover:text-gold transition-colors duration-300">05</div><div><h3 class="font-display text-2xl font-medium text-foreground mb-2">Deploy & Optimize</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">We don't disappear after delivery. We support implementation, track performance, and optimize based on real data.</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-28 relative" style="background-color: #0D1117;">
+      <div class="divider-gold mb-0"></div>
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <p class="section-label mb-4 scroll-reveal">◆ What Our Clients Say</p>
+        <h2 class="font-display text-5xl sm:text-6xl font-light text-foreground mb-4 scroll-reveal">What Our Clients <span class="italic gradient-text-gold">Say.</span></h2>
+        <p class="font-body text-sm text-muted-foreground max-w-xl mb-14 leading-relaxed scroll-reveal">Real feedback from brands we've helped scale.</p>
+        <div id="testimonials-list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12 scroll-reveal">
+          <div class="testimonial-card card-glass rounded-sm p-8 border-l-4 border-gold hover:bg-navy-light transition-colors duration-300">
+            <div class="font-display text-5xl text-gold/30 leading-none mb-4 select-none">"</div>
+            <p class="font-body text-sm text-foreground/90 leading-relaxed mb-6">The email sequence they wrote for our launch generated $140k in 7 days. The copy was surgical — every word had a purpose.</p>
+            <div class="border-t border-border pt-4"><div class="font-display text-base font-medium text-gold">Marcus T.</div><div class="font-body text-xs text-muted-foreground">Founder, HealthTech SaaS</div></div>
+          </div>
+          <div class="testimonial-card card-glass rounded-sm p-8 border-l-4 border-gold hover:bg-navy-light transition-colors duration-300">
+            <div class="font-display text-5xl text-gold/30 leading-none mb-4 select-none">"</div>
+            <p class="font-body text-sm text-foreground/90 leading-relaxed mb-6">Our VSL completion rate went from 34% to 71% after their rewrite. The script didn't feel like a script — it felt like a conversation.</p>
+            <div class="border-t border-border pt-4"><div class="font-display text-base font-medium text-gold">Danielle K.</div><div class="font-body text-xs text-muted-foreground">CEO, Online Education Brand</div></div>
+          </div>
+          <div class="testimonial-card card-glass rounded-sm p-8 border-l-4 border-gold hover:bg-navy-light transition-colors duration-300">
+            <div class="font-display text-5xl text-gold/30 leading-none mb-4 select-none">"</div>
+            <p class="font-body text-sm text-foreground/90 leading-relaxed mb-6">The website they built converted at 11.4% on cold traffic within the first week. We'd never seen anything like it.</p>
+            <div class="border-t border-border pt-4"><div class="font-display text-base font-medium text-gold">Ryan O.</div><div class="font-body text-xs text-muted-foreground">CMO, E-Commerce Brand</div></div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="button" id="submit-testimonial-btn" class="inline-flex items-center gap-2 px-7 py-3.5 font-body font-medium text-sm bg-gradient-gold text-accent-foreground rounded-sm hover:opacity-90 transition-opacity glow-gold">Submit a Testimonial</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-background relative overflow-hidden">
+      <div class="divider-gold mb-0"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full opacity-10 pointer-events-none" style="background: radial-gradient(ellipse, hsl(213, 85%, 55%), transparent 70%);"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+        <p class="section-label mb-6 scroll-reveal">◆ Let's Work Together</p>
+        <h2 class="font-display text-6xl sm:text-7xl font-light text-foreground mb-6 leading-[0.95] scroll-reveal">Ready to Scale<br><span class="italic gradient-text-gold">What's Working?</span></h2>
+        <p class="font-body text-sm text-muted-foreground max-w-lg mx-auto mb-12 leading-relaxed scroll-reveal">We take on a limited number of clients each month to ensure full attention to every project. If you're serious about results, let's talk.</p>
+        <div class="card-glass rounded-sm p-8 sm:p-10 text-left max-w-2xl mx-auto scroll-reveal">
+          <p class="section-label mb-6">Send an Inquiry</p>
+          <form class="space-y-4" action="https://formspree.io/f/xbdadnzn" method="POST">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div><label class="font-body text-xs text-muted-foreground mb-1.5 block tracking-wide">Full Name</label><input type="text" name="name" placeholder="Your name" required class="w-full bg-background border border-border rounded-sm px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 transition-colors" /></div>
+              <div><label class="font-body text-xs text-muted-foreground mb-1.5 block tracking-wide">Email Address</label><input type="email" name="email" placeholder="you@company.com" required class="w-full bg-background border border-border rounded-sm px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 transition-colors" /></div>
+            </div>
+            <div><label for="service-interest" class="font-body text-xs text-muted-foreground mb-1.5 block tracking-wide">Service of Interest</label><select id="service-interest" name="service" class="w-full bg-background border border-border rounded-sm px-4 py-3 font-body text-sm text-foreground focus:outline-none focus:border-primary/50 transition-colors"><option value="">Select a service...</option><option value="email">Email Copy</option><option value="vsl">VSL Script</option><option value="website">Website Design</option><option value="ai-automation">AI Automation</option><option value="full">Full-Funnel Package</option></select></div>
+            <div><label class="font-body text-xs text-muted-foreground mb-1.5 block tracking-wide">Tell Us About Your Project</label><textarea name="message" rows="4" placeholder="What are you working on? What results do you need?" class="w-full bg-background border border-border rounded-sm px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-primary/50 transition-colors resize-none"></textarea></div>
+            <button type="submit" class="w-full py-3.5 font-body font-medium text-sm bg-gradient-gold text-accent-foreground rounded-sm hover:opacity-90 transition-opacity glow-gold mt-2">Submit Inquiry →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-navy-mid border-t border-border py-12">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div><span class="font-display text-lg font-semibold text-foreground">The<span class="gradient-text-gold">StatusQ</span></span><p class="font-body text-xs text-muted-foreground mt-1">Premium Copywriting & Design Studio</p></div>
+          <div class="flex gap-8 flex-wrap justify-center">
+            <a href="#services" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors">Services</a>
+            <a href="#ai-automation" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors">AI Automation</a>
+            <a href="#results" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors">Results</a>
+            <a href="#process" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors">Process</a>
+            <a href="#testimonials" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors">Testimonials</a>
+            <a href="#contact" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+            <a href="#" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors" data-modal="privacy-modal">Privacy Policy</a>
+            <a href="#" class="font-body text-xs text-muted-foreground hover:text-foreground transition-colors" data-modal="terms-modal">Terms of Service</a>
+          </div>
+          <p class="font-body text-xs text-muted-foreground">© <span id="year"></span> TheStatusQ. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="privacy-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+      <div class="modal-backdrop-inner"><div class="modal-panel">
+        <button type="button" class="modal-close" aria-label="Close">×</button>
+        <h2 class="font-display text-2xl font-semibold mb-6 text-gold">Privacy Policy</h2>
+        <p class="font-body text-sm text-gray-300 leading-relaxed">Status Q respects your privacy. We only collect information necessary to provide our auditing services. We do not sell, rent, or share your data with third parties for marketing purposes.</p>
+        <p class="font-body text-xs text-gray-500 mt-4">Last Updated: February 2026.</p>
+      </div></div>
+    </div>
+
+    <div id="terms-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+      <div class="modal-backdrop-inner"><div class="modal-panel">
+        <button type="button" class="modal-close" aria-label="Close">×</button>
+        <h2 class="font-display text-2xl font-semibold mb-6 text-gold">Terms of Service</h2>
+        <div class="font-body text-sm text-gray-300 leading-relaxed space-y-4">
+          <p><strong class="text-gray-200">Professional Services:</strong> Status Q provides infrastructure auditing, visual authority consulting, and technical optimization services.</p>
+          <p><strong class="text-gray-200">Payment & Refunds:</strong> All sales are final. No refunds once the audit process has commenced.</p>
+          <p><strong class="text-gray-200">Intellectual Property:</strong> All methodologies remain the intellectual property of Status Q.</p>
+          <p><strong class="text-gray-200">Limitation of Liability:</strong> We are not responsible for third-party platform changes or business outcomes.</p>
+        </div>
+        <p class="font-body text-xs mt-8 text-gold">Status Q © MMXXVI</p>
+      </div></div>
+    </div>
+
+    <div id="testimonial-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+      <div class="modal-backdrop-inner"><div class="modal-panel">
+        <button type="button" class="modal-close" aria-label="Close">×</button>
+        <h2 class="font-display text-2xl font-semibold mb-6 text-gold">Submit a Testimonial</h2>
+        <form id="testimonial-form" class="space-y-4">
+          <div><label for="testimonial-name" class="font-body text-xs text-muted-foreground mb-1.5 block tracking-wide">Full Name</label><input id="testimonial-name" name="full_name" type="text" required placeholder="Your full name" class="input-gold w-full bg-background border border-border rounded-sm px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground/50 transition-colors" /></div>
+          <div><label for="testimonial-title" class="font-body text-xs text-muted-foreground mb-1.5 block tracking-wide">Title / Role</label><input id="testimonial-title" name="title_role" type="text" required placeholder="e.g. CEO, Marketing Director" class="input-gold w-full bg-background border border-border rounded-sm px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground/50 transition-colors" /></div>
+          <div><label for="testimonial-text" class="font-body text-xs text-muted-foreground mb-1.5 block tracking-wide">Your Testimonial</label><textarea id="testimonial-text" name="testimonial_text" rows="5" required placeholder="Share your experience working with Status Q..." class="input-gold w-full bg-background border border-border rounded-sm px-4 py-3 font-body text-sm text-foreground placeholder:text-muted-foreground/50 transition-colors resize-none"></textarea></div>
+          <p id="testimonial-form-message" class="font-body text-xs hidden"></p>
+          <button type="submit" class="w-full py-3.5 font-body font-medium text-sm bg-gradient-gold text-accent-foreground rounded-sm hover:opacity-90 transition-opacity glow-gold">Submit Testimonial →</button>
+        </form>
+      </div></div>
+    </div>
+  </main>
+
+  <script>
+    tailwind.config = {
+      darkMode: ["class"],
+      theme: {
+        container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+        extend: {
+          colors: {
+            border: "hsl(var(--border))", gold: "hsl(var(--gold))", "navy-deep": "hsl(var(--navy-deep))", "navy-mid": "hsl(var(--navy-mid))", "navy-light": "hsl(var(--navy-light))", "blue-glow": "hsl(var(--blue-glow))", "blue-soft": "hsl(var(--blue-soft))", input: "hsl(var(--input))", ring: "hsl(var(--ring))", background: "hsl(var(--background))", foreground: "hsl(var(--foreground))",
+            primary: { DEFAULT: "hsl(var(--primary))", foreground: "hsl(var(--primary-foreground))" },
+            secondary: { DEFAULT: "hsl(var(--secondary))", foreground: "hsl(var(--secondary-foreground))" },
+            destructive: { DEFAULT: "hsl(var(--destructive))", foreground: "hsl(var(--destructive-foreground))" },
+            muted: { DEFAULT: "hsl(var(--muted))", foreground: "hsl(var(--muted-foreground))" },
+            accent: { DEFAULT: "hsl(var(--accent))", foreground: "hsl(var(--accent-foreground))" },
+            popover: { DEFAULT: "hsl(var(--popover))", foreground: "hsl(var(--popover-foreground))" },
+            card: { DEFAULT: "hsl(var(--card))", foreground: "hsl(var(--card-foreground))" },
+          },
+          borderRadius: { lg: "var(--radius)", md: "calc(var(--radius) - 2px)", sm: "calc(var(--radius) - 4px)" },
+        },
+      },
+    };
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+
+      // scroll-reveal — fires once per element as it enters the viewport
+      var revealEls = document.querySelectorAll(".scroll-reveal");
+      if ("IntersectionObserver" in window) {
+        var revealObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealEls.forEach(function(el) { revealObserver.observe(el); });
+      } else {
+        revealEls.forEach(function(el) { el.classList.add("is-visible"); });
+      }
+
+      var nav = document.getElementById("site-nav");
+      function onScroll() {
+        if (window.scrollY > 40) { nav.classList.add("bg-background/95", "backdrop-blur-md", "border-b", "border-border"); }
+        else { nav.classList.remove("bg-background/95", "backdrop-blur-md", "border-b", "border-border"); }
+      }
+      window.addEventListener("scroll", onScroll); onScroll();
+
+      var modals = document.querySelectorAll(".modal-backdrop");
+      function openModal(id) { var el = document.getElementById(id); if (el) { el.classList.remove("hidden"); document.body.style.overflow = "hidden"; } }
+      function closeModal(modal) { if (modal) { modal.classList.add("hidden"); document.body.style.overflow = ""; } }
+      function closeAllModals() { modals.forEach(function(m) { m.classList.add("hidden"); }); document.body.style.overflow = ""; }
+      document.querySelectorAll("[data-modal]").forEach(function(link) { link.addEventListener("click", function(e) { e.preventDefault(); openModal(link.getAttribute("data-modal")); }); });
+      document.querySelectorAll(".modal-close").forEach(function(btn) { btn.addEventListener("click", function() { closeModal(btn.closest(".modal-backdrop")); }); });
+      document.querySelectorAll(".modal-backdrop").forEach(function(backdrop) { backdrop.addEventListener("click", function(e) { if (e.target === backdrop) closeModal(backdrop); }); });
+      document.addEventListener("keydown", function(e) { if (e.key === "Escape") closeAllModals(); });
+
+      var submitBtn = document.getElementById("submit-testimonial-btn");
+      if (submitBtn) submitBtn.addEventListener("click", function() { openModal("testimonial-modal"); });
+
+      function getSupabaseClient() {
+        try {
+          if (window.supabase && typeof window.supabase.createClient === "function") {
+            return window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
+          }
+        } catch(e) {}
+        return null;
+      }
+
+      function renderTestimonialCard(t) {
+        var div = document.createElement("div");
+        div.className = "card-glass rounded-sm p-8 border-l-4 border-gold hover:bg-navy-light transition-colors duration-300";
+        div.innerHTML = '<div class="font-display text-5xl text-gold/30 leading-none mb-4 select-none">"</div>' +
+          '<p class="font-body text-sm text-foreground/90 leading-relaxed mb-6">' + (t.testimonial_text||'').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</p>' +
+          '<div class="border-t border-border pt-4"><div class="font-display text-base font-medium text-gold">' + (t.full_name||'').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div>' +
+          '<div class="font-body text-xs text-muted-foreground">' + (t.title_role||'').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</div></div>';
+        return div;
+      }
+
+      function loadTestimonials() {
+        if (!window.SUPABASE_URL || !window.SUPABASE_ANON_KEY) return;
+        var client = getSupabaseClient();
+        if (!client) return;
+        var list = document.getElementById("testimonials-list");
+        client.from("testimonials").select("id,full_name,title_role,testimonial_text").eq("status","approved").order("created_at",{ascending:false})
+          .then(function(res) { if (res.data && res.data.length > 0) { list.innerHTML = ""; res.data.forEach(function(t) { list.appendChild(renderTestimonialCard(t)); }); } })
+          .catch(function(){});
+      }
+      loadTestimonials();
+
+      var testimonialForm = document.getElementById("testimonial-form");
+      var testimonialMessage = document.getElementById("testimonial-form-message");
+      if (testimonialForm) {
+        testimonialForm.addEventListener("submit", function(e) {
+          e.preventDefault();
+          if (!window.SUPABASE_URL || !window.SUPABASE_ANON_KEY) { testimonialMessage.textContent = "Submission not configured."; testimonialMessage.classList.remove("hidden"); return; }
+          var client = getSupabaseClient();
+          if (!client) { testimonialMessage.textContent = "Connection error. Please try again."; testimonialMessage.classList.remove("hidden"); return; }
+          var fullName = document.getElementById("testimonial-name").value.trim();
+          var titleRole = document.getElementById("testimonial-title").value.trim();
+          var testimonialText = document.getElementById("testimonial-text").value.trim();
+          if (!fullName || !titleRole || !testimonialText) return;
+          client.from("testimonials").insert({full_name:fullName, title_role:titleRole, testimonial_text:testimonialText, status:"pending"})
+            .then(function(res) {
+              testimonialMessage.classList.remove("hidden");
+              if (res.error) {
+                testimonialMessage.textContent = "Error: " + res.error.message;
+                testimonialMessage.className = "font-body text-xs text-red-400";
+              } else {
+                testimonialMessage.textContent = "Thank you! Your testimonial is pending review.";
+                testimonialMessage.className = "font-body text-xs text-gold";
+                testimonialForm.reset();
+                setTimeout(function() { closeModal(document.getElementById("testimonial-modal")); testimonialMessage.classList.add("hidden"); }, 2000);
+              }
+            })
+            .catch(function(err) { testimonialMessage.textContent = "Something went wrong. Please try again."; testimonialMessage.className = "font-body text-xs text-red-400"; testimonialMessage.classList.remove("hidden"); });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
