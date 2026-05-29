@@ -44,7 +44,7 @@
       min-height: 100vh;
     }
 
-    /* ââ TOP BAR ââ */
+    /* -- TOP BAR -- */
     .topbar {
       position: fixed; top: 0; left: 0; right: 0; z-index: 50;
       background: rgba(6,11,19,0.92);
@@ -72,13 +72,13 @@
       letter-spacing: 0.08em; text-transform: uppercase;
     }
 
-    /* ââ PAGE LAYOUT ââ */
+    /* -- PAGE LAYOUT -- */
     .page {
       max-width: 820px; margin: 0 auto;
       padding: 100px 24px 80px;
     }
 
-    /* ââ HEADER ââ */
+    /* -- HEADER -- */
     .header { text-align: center; margin-bottom: 52px; }
     .header-eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
@@ -108,7 +108,7 @@
       line-height: 1.65;
     }
 
-    /* ââ EMAIL PREVIEW FRAME ââ */
+    /* -- EMAIL PREVIEW FRAME -- */
     .email-frame {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -200,7 +200,7 @@
     }
     .email-sig strong { color: #1A2332; display: block; margin-bottom: 2px; }
 
-    /* ââ BUILT BY STRIP ââ */
+    /* -- BUILT BY STRIP -- */
     .built-by {
       text-align: center; margin-top: 36px;
       display: flex; flex-direction: column; align-items: center; gap: 16px;
@@ -237,7 +237,7 @@
       color: var(--white);
     }
 
-    /* ââ RESPONSIVE ââ */
+    /* -- RESPONSIVE -- */
     @media (max-width: 600px) {
       .page { padding: 88px 16px 60px; }
       .email-client-header { padding: 18px 20px 16px; }
@@ -275,7 +275,7 @@
           <div class="browser-dot"></div>
           <div class="browser-dot"></div>
         </div>
-        <div class="browser-url" id="browser-url-bar">app.klaviyo.com â Email Preview</div>
+        <div class="browser-url" id="browser-url-bar">app.klaviyo.com &mdash; Email Preview</div>
       </div>
 
       <!-- Email client header -->
@@ -306,8 +306,8 @@
     <div class="built-by">
       <span class="built-by-label">Built by</span>
       <a href="https://thestatusq.io" class="built-by-logo">The<span>Status</span>Q</a>
-      <p class="built-by-sub" id="cta-sub">Email copy, Klaviyo flows, and full funnel builds â engineered to move revenue.</p>
-      <a href="https://thestatusq.io/#contact" class="cta-link">Let's build yours â</a>
+      <p class="built-by-sub" id="cta-sub">Email copy, Klaviyo flows, and full funnel builds &mdash; engineered to move revenue.</p>
+      <a href="https://thestatusq.io/#contact" class="cta-link">Let's build yours &rarr;</a>
     </div>
 
   </main>
@@ -326,7 +326,7 @@
       return str.replace(/([A-Z])/g, ' $1').replace(/^./, s => s.toUpperCase()).trim();
     }
     function formatBrand(raw) {
-      // "MitoRedLight" â "Mito Red Light", "CueTime" â "CueTime"
+      // "MitoRedLight" -> "Mito Red Light", "CueTime" -> "CueTime"
       return titleCase(raw) || 'Your Brand';
     }
     function decodeAndEscape(str) {
@@ -338,7 +338,7 @@
       const paras = text.split(/\n\n+/).filter(p => p.trim());
       if (paras.length === 0) return '<p>' + text + '</p>';
       return paras.map(p => {
-        // Single-line breaks within a paragraph â <br>
+        // Single-line breaks within a paragraph -> <br>
         const inner = p.replace(/\n/g, '<br>');
         return '<p>' + inner + '</p>';
       }).join('');
@@ -360,9 +360,9 @@
       document.getElementById('hero-subtitle').textContent = previewDecoded + '.';
     }
 
-    // Browser bar
+    // Browser bar — unicode escape keeps this ASCII-safe across all charsets
     document.getElementById('browser-url-bar').textContent =
-      'app.klaviyo.com â ' + (brand || 'Brand') + ' Email Preview';
+      'app.klaviyo.com — ' + (brand || 'Brand') + ' Email Preview';
 
     // From field
     const fromDomain = brand
@@ -381,7 +381,7 @@
       // Generic placeholder if body isn't provided
       document.getElementById('email-body-content').innerHTML = `
         <p>Hi [First Name],</p>
-        <p>This is a sample email built to show you what a Klaviyo sequence for ${brandFormatted} could look like â copy, design, and strategy included.</p>
+        <p>This is a sample email built to show you what a Klaviyo sequence for ${brandFormatted} could look like — copy, design, and strategy included.</p>
         <p>Every sequence we build is custom. No templates, no filler. Built around your product, your list, and the moments that matter in your customer journey.</p>
         <p>Reach out if you'd like to see more.</p>
         <div class="email-sig">
