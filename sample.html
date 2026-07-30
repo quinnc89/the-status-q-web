@@ -23,7 +23,7 @@
       --blue:         #2B82EE;
       --text:         #EDF2F7;
       --text-muted:   #7A8FA6;
-      --text-dim:     #3D5166;
+      --text-dim:     #7D90A8;
       --white:        #FFFFFF;
       --radius-sm:    6px;
       --radius-md:    12px;
@@ -155,7 +155,7 @@
       margin-bottom: 8px;
     }
     .email-meta-label {
-      font-size: 12px; color: #8A96A3; font-weight: 500;
+      font-size: 12px; color: #5F6B7A; font-weight: 500;
       min-width: 52px; padding-top: 1px;
     }
     .email-meta-value {
@@ -360,9 +360,9 @@
       document.getElementById('hero-subtitle').textContent = previewDecoded + '.';
     }
 
-    // Browser bar — unicode escape keeps this ASCII-safe across all charsets
+    // Browser bar: unicode escape keeps this ASCII-safe across all charsets
     document.getElementById('browser-url-bar').textContent =
-      'app.klaviyo.com — ' + (brand || 'Brand') + ' Email Preview';
+      'app.klaviyo.com - ' + (brand || 'Brand') + ' Email Preview';
 
     // From field
     const fromDomain = brand
@@ -381,7 +381,7 @@
       // Generic placeholder if body isn't provided
       document.getElementById('email-body-content').innerHTML = `
         <p>Hi [First Name],</p>
-        <p>This is a sample email built to show you what a Klaviyo sequence for ${brandFormatted} could look like — copy, design, and strategy included.</p>
+        <p>This is a sample email built to show you what a Klaviyo sequence for ${brandFormatted} could look like. Copy, design, and strategy included.</p>
         <p>Every sequence we build is custom. No templates, no filler. Built around your product, your list, and the moments that matter in your customer journey.</p>
         <p>Reach out if you'd like to see more.</p>
         <div class="email-sig">
