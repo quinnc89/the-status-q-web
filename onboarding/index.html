@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onboarding — TheStatusQ</title>
+  <title>Onboarding | TheStatusQ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       --blue-dim:  rgba(43,130,238,0.12);
       --blue-glow: rgba(43,130,238,0.08);
       --white:     #FFFFFF;
-      --muted:     #6A7A94;
+      --muted:     #78889F;
       --muted-2:   #8A9AB4;
       --error:     #E05C5C;
       --success:   #4CAF7C;
@@ -361,7 +361,7 @@
     }
     .success-screen p { font-size: 14px; color: var(--muted-2); max-width: 400px; margin: 0 auto 8px; }
 
-    /* ── AI FORM (tab 2 — blue panel) ── */
+    /* ── AI FORM (tab 2: blue panel) ── */
     .blue-panel { padding: 0 20px; }
     .ai-intro { padding: 28px 0 20px; }
     .ai-intro h1 {
@@ -506,14 +506,14 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     TAB 1 — CLIENT ONBOARDING
+     TAB 1: CLIENT ONBOARDING
 ═══════════════════════════════════════════════════════════════ -->
 <div id="tab-clients" class="tab-panel active">
   <main class="page">
 
     <div class="intro" id="c-intro">
       <h1>Welcome. Let's get you set up.</h1>
-      <p>This takes about 8 minutes. The more detail you give, the faster we move — no back-and-forth needed.</p>
+      <p>This takes about 8 minutes. The more detail you give, the faster we move, no back-and-forth needed.</p>
     </div>
 
     <div class="progress-wrap" id="c-progress">
@@ -530,7 +530,7 @@
         <div class="step-line" id="line-5"></div>
         <div class="step-dot" id="dot-6"><span>6</span></div>
       </div>
-      <div class="progress-label" id="progress-label">Step <strong>1</strong> of 6 — About You</div>
+      <div class="progress-label" id="progress-label">Step <strong>1</strong> of 6: About You</div>
     </div>
 
     <div class="form-card" id="c-form-card">
@@ -540,7 +540,7 @@
         <div class="step active" id="step-1">
           <div class="section-title">About You</div>
           <div class="section-divider"></div>
-          <p class="section-subtitle">Basic contact details — so we know who we're working with.</p>
+          <p class="section-subtitle">Basic contact details, so we know who we're working with.</p>
           <div class="field-row">
             <div class="field-group" id="fg-first_name">
               <label for="first_name">First Name <span class="req">*</span></label>
@@ -620,15 +620,15 @@
           <p class="section-subtitle">Help us match your look and voice from day one.</p>
           <div class="field-group">
             <label for="brand_primary">Primary Brand Color(s) <span class="hint">Hex code(s) or describe</span></label>
-            <input type="text" id="brand_primary" name="brand_primary" placeholder="#1A2B43 — deep navy">
+            <input type="text" id="brand_primary" name="brand_primary" placeholder="#1A2B43 (deep navy)">
           </div>
           <div class="field-group">
             <label for="brand_secondary">Secondary / Accent Color(s) <span class="hint">If you have them</span></label>
-            <input type="text" id="brand_secondary" name="brand_secondary" placeholder="#C9A84C — warm gold">
+            <input type="text" id="brand_secondary" name="brand_secondary" placeholder="#C9A84C (warm gold)">
           </div>
           <div class="field-group">
             <label for="brand_fonts">Preferred Fonts <span class="hint">Name them or describe the vibe</span></label>
-            <input type="text" id="brand_fonts" name="brand_fonts" placeholder="Playfair Display for headers, Inter for body — or 'elegant serif'">
+            <input type="text" id="brand_fonts" name="brand_fonts" placeholder="Playfair Display for headers, Inter for body, or 'elegant serif'">
           </div>
           <div class="field-group">
             <label>3 Words That Describe Your Brand Voice <span class="req">*</span></label>
@@ -649,13 +649,13 @@
           <div class="field-group">
             <label>Do you have a brand guide?</label>
             <select id="has_brand_guide" name="has_brand_guide">
-              <option value="">— Select —</option>
+              <option value="">Select...</option>
               <option value="yes">Yes</option>
-              <option value="no">No — we'll build from scratch</option>
-              <option value="partial">Sort of — I'll share what I have</option>
+              <option value="no">No, we'll build from scratch</option>
+              <option value="partial">Sort of, I'll share what I have</option>
             </select>
           </div>
-          <div class="upload-note"><strong>Send your logo + brand files after submitting.</strong><br>Email to <strong>hello@thestatusq.io</strong> — subject: <em>Brand Kit — [Your Company Name]</em></div>
+          <div class="upload-note"><strong>Send your logo + brand files after submitting.</strong><br>Email to <strong>hello@thestatusq.io</strong>, subject: <em>Brand Kit for [Your Company Name]</em></div>
           <div class="btn-row">
             <button type="button" class="btn btn-back" onclick="cPrev(3)">← Back</button>
             <button type="button" class="btn btn-next" onclick="cNext(3)">Continue →</button>
@@ -668,8 +668,8 @@
           <div class="section-divider"></div>
           <p class="section-subtitle">The context that makes the copy sharp and the strategy specific.</p>
           <div class="field-group" id="fg-target_customer">
-            <label for="target_customer">Who is your target customer? <span class="req">*</span><span class="hint">1–2 sentences — be specific.</span></label>
-            <textarea id="target_customer" name="target_customer" placeholder="Women 28–42 who are time-poor and want premium, healthy meals delivered…"></textarea>
+            <label for="target_customer">Who is your target customer? <span class="req">*</span><span class="hint">1-2 sentences, be specific.</span></label>
+            <textarea id="target_customer" name="target_customer" placeholder="Women 28-42 who are time-poor and want premium, healthy meals delivered…"></textarea>
             <div class="error-msg">Required</div>
           </div>
           <div class="field-group">
@@ -698,9 +698,9 @@
           <div class="platform-block">
             <div class="platform-name">Klaviyo</div>
             <div class="radio-group">
-              <label class="radio-item"><input type="radio" name="klaviyo_status" value="grant_access" onchange="toggleCreds('klaviyo',this.value)"><span class="radio-label">Yes — I'll grant you access</span></label>
-              <label class="radio-item"><input type="radio" name="klaviyo_status" value="send_login" onchange="toggleCreds('klaviyo',this.value)"><span class="radio-label">Yes — here are my credentials</span></label>
-              <label class="radio-item"><input type="radio" name="klaviyo_status" value="create_new" onchange="toggleCreds('klaviyo',this.value)"><span class="radio-label">No — please create a new account</span></label>
+              <label class="radio-item"><input type="radio" name="klaviyo_status" value="grant_access" onchange="toggleCreds('klaviyo',this.value)"><span class="radio-label">Yes, I'll grant you access</span></label>
+              <label class="radio-item"><input type="radio" name="klaviyo_status" value="send_login" onchange="toggleCreds('klaviyo',this.value)"><span class="radio-label">Yes, here are my credentials</span></label>
+              <label class="radio-item"><input type="radio" name="klaviyo_status" value="create_new" onchange="toggleCreds('klaviyo',this.value)"><span class="radio-label">No, please create a new account</span></label>
               <label class="radio-item"><input type="radio" name="klaviyo_status" value="na" onchange="toggleCreds('klaviyo',this.value)"><span class="radio-label">N/A</span></label>
             </div>
             <div class="creds-field" id="klaviyo-creds">
@@ -711,9 +711,9 @@
           <div class="platform-block">
             <div class="platform-name">Shopify / E-Commerce Platform</div>
             <div class="radio-group">
-              <label class="radio-item"><input type="radio" name="shopify_status" value="grant_access" onchange="toggleCreds('shopify',this.value)"><span class="radio-label">Yes — I'll grant you staff access</span></label>
-              <label class="radio-item"><input type="radio" name="shopify_status" value="send_login" onchange="toggleCreds('shopify',this.value)"><span class="radio-label">Yes — here are my credentials</span></label>
-              <label class="radio-item"><input type="radio" name="shopify_status" value="create_new" onchange="toggleCreds('shopify',this.value)"><span class="radio-label">No — please set up a store</span></label>
+              <label class="radio-item"><input type="radio" name="shopify_status" value="grant_access" onchange="toggleCreds('shopify',this.value)"><span class="radio-label">Yes, I'll grant you staff access</span></label>
+              <label class="radio-item"><input type="radio" name="shopify_status" value="send_login" onchange="toggleCreds('shopify',this.value)"><span class="radio-label">Yes, here are my credentials</span></label>
+              <label class="radio-item"><input type="radio" name="shopify_status" value="create_new" onchange="toggleCreds('shopify',this.value)"><span class="radio-label">No, please set up a store</span></label>
               <label class="radio-item"><input type="radio" name="shopify_status" value="na" onchange="toggleCreds('shopify',this.value)"><span class="radio-label">N/A</span></label>
             </div>
             <div class="creds-field" id="shopify-creds">
@@ -724,9 +724,9 @@
           <div class="platform-block">
             <div class="platform-name">Google Analytics 4 (GA4)</div>
             <div class="radio-group">
-              <label class="radio-item"><input type="radio" name="ga_status" value="grant_access" onchange="toggleCreds('ga',this.value)"><span class="radio-label">Yes — I'll add you as a viewer/editor</span></label>
-              <label class="radio-item"><input type="radio" name="ga_status" value="send_login" onchange="toggleCreds('ga',this.value)"><span class="radio-label">Yes — here are my credentials</span></label>
-              <label class="radio-item"><input type="radio" name="ga_status" value="create_new" onchange="toggleCreds('ga',this.value)"><span class="radio-label">No — please set it up</span></label>
+              <label class="radio-item"><input type="radio" name="ga_status" value="grant_access" onchange="toggleCreds('ga',this.value)"><span class="radio-label">Yes, I'll add you as a viewer/editor</span></label>
+              <label class="radio-item"><input type="radio" name="ga_status" value="send_login" onchange="toggleCreds('ga',this.value)"><span class="radio-label">Yes, here are my credentials</span></label>
+              <label class="radio-item"><input type="radio" name="ga_status" value="create_new" onchange="toggleCreds('ga',this.value)"><span class="radio-label">No, please set it up</span></label>
               <label class="radio-item"><input type="radio" name="ga_status" value="na" onchange="toggleCreds('ga',this.value)"><span class="radio-label">N/A</span></label>
             </div>
             <div class="creds-field" id="ga-creds">
@@ -748,15 +748,15 @@
         <div class="step" id="step-6">
           <div class="section-title">Goals & Launch</div>
           <div class="section-divider"></div>
-          <p class="section-subtitle">Last step. This shapes everything — be specific.</p>
+          <p class="section-subtitle">Last step. This shapes everything, be specific.</p>
           <div class="field-group" id="fg-goal_90">
-            <label for="goal_90">What does success look like in 90 days? <span class="req">*</span><span class="hint">Revenue targets, list growth, traffic — whatever matters most</span></label>
+            <label for="goal_90">What does success look like in 90 days? <span class="req">*</span><span class="hint">Revenue targets, list growth, traffic, whatever matters most</span></label>
             <textarea id="goal_90" name="goal_90" placeholder="We want to hit $30K/month in email revenue, grow our list from 2K to 8K…"></textarea>
             <div class="error-msg">Required</div>
           </div>
           <div class="field-group">
             <label for="upcoming_deadlines">Hard deadlines or upcoming events <span class="hint">Product launches, seasonal campaigns, investor demos</span></label>
-            <textarea id="upcoming_deadlines" name="upcoming_deadlines" placeholder="Black Friday is Nov 29 — we need everything live by Nov 1…"></textarea>
+            <textarea id="upcoming_deadlines" name="upcoming_deadlines" placeholder="Black Friday is Nov 29, we need everything live by Nov 1…"></textarea>
           </div>
           <div class="field-group">
             <label for="additional_notes">Anything else from our call?</label>
@@ -783,7 +783,7 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════════════════════
-     TAB 2 — AI RECEPTIONIST SETUP
+     TAB 2: AI RECEPTIONIST SETUP
 ═══════════════════════════════════════════════════════════════ -->
 <div id="tab-ai" class="tab-panel">
   <main class="page">
@@ -791,7 +791,7 @@
 
       <div class="ai-intro">
         <h1>AI Receptionist <em>Setup</em></h1>
-        <p>Complete this form to configure your AI receptionist. Every field feeds directly into your assistant — the more detail, the better it performs on live calls.</p>
+        <p>Complete this form to configure your AI receptionist. Every field feeds directly into your assistant. The more detail, the better it performs on live calls.</p>
       </div>
 
       <form id="ai-form" novalidate>
@@ -821,7 +821,7 @@
           <div class="field-row">
             <div class="field-group">
               <label>Operating Hours <span class="req">*</span></label>
-              <input type="text" name="ai_hours" placeholder="Mon–Fri 7am–8pm, Sat 8am–4pm" required>
+              <input type="text" name="ai_hours" placeholder="Mon-Fri 7am-8pm, Sat 8am-4pm" required>
             </div>
             <div class="field-group">
               <label>Timezone <span class="req">*</span></label>
@@ -846,7 +846,7 @@
             <div class="field-group">
               <label>Assistant Name <span class="req">*</span></label>
               <input type="text" name="ai_assistant_name" placeholder="e.g. Alex, Jordan, Casey" required>
-              <div class="field-note" style="font-size:12px;color:var(--muted);margin-top:4px">Pick something natural — avoid "AI" or "Bot."</div>
+              <div class="field-note" style="font-size:12px;color:var(--muted);margin-top:4px">Pick something natural, avoid "AI" or "Bot."</div>
             </div>
             <div class="field-group">
               <label>Callback Window</label>
@@ -881,7 +881,7 @@
             </div>
             <div class="field-group">
               <label>Urgent Issue Contact</label>
-              <input type="text" name="ai_urgent_contact" placeholder="e.g. Mike (owner) — 917-555-0150">
+              <input type="text" name="ai_urgent_contact" placeholder="e.g. Mike (owner), 917-555-0150">
             </div>
           </div>
         </div>
@@ -889,7 +889,7 @@
         <!-- 04 Common Q&A -->
         <div class="ai-section" data-num="04">
           <h2>Common Q&amp;A</h2>
-          <p class="ai-section-desc">Add at least 5 questions callers ask most. Aim for 8–10.</p>
+          <p class="ai-section-desc">Add at least 5 questions callers ask most. Aim for 8-10.</p>
           <div class="dynamic-rows" id="ai-faq-rows"></div>
           <button type="button" class="btn-add" onclick="aiAddFaq()">+ Add question</button>
         </div>
@@ -900,7 +900,7 @@
           <p class="ai-section-desc">How the assistant should handle booking requests.</p>
           <div class="field-group">
             <label>Appointment Types</label>
-            <input type="text" name="ai_appointment_types" placeholder="e.g. Free consultation, Tour, Estimate — comma separated">
+            <input type="text" name="ai_appointment_types" placeholder="e.g. Free consultation, Tour, Estimate, comma separated">
           </div>
           <div class="field-group">
             <label>Booking System <span class="req">*</span></label>
@@ -938,7 +938,7 @@
           <hr class="divider">
           <div class="field-group">
             <label>Billing / Payment → Transfer To</label>
-            <input type="text" name="ai_billing_contact" placeholder="e.g. Jamie (billing) — 917-555-0191">
+            <input type="text" name="ai_billing_contact" placeholder="e.g. Jamie (billing), 917-555-0191">
           </div>
         </div>
 
@@ -1032,7 +1032,7 @@ function switchTab(tab) {
 }
 
 // ═══════════════════════════════════
-// TAB 1 — CLIENT ONBOARDING
+// TAB 1: CLIENT ONBOARDING
 // ═══════════════════════════════════
 const STEPS = ['About You','Service','Brand','Market','Platforms','Goals'];
 let cCurrent = 1;
@@ -1048,7 +1048,7 @@ function cShowStep(n) {
     if (i < n) { dot.classList.add('done'); if (line) line.classList.add('done'); }
     else if (i === n) dot.classList.add('active');
   }
-  document.getElementById('progress-label').innerHTML = `Step <strong>${n}</strong> of 6 — ${STEPS[n-1]}`;
+  document.getElementById('progress-label').innerHTML = `Step <strong>${n}</strong> of 6: ${STEPS[n-1]}`;
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
@@ -1131,7 +1131,7 @@ async function cSubmit() {
 }
 
 // ═══════════════════════════════════
-// TAB 2 — AI RECEPTIONIST
+// TAB 2: AI RECEPTIONIST
 // ═══════════════════════════════════
 let aiStaffCount = 0, aiFaqCount = 0, aiTransferCount = 0;
 
@@ -1157,7 +1157,7 @@ function aiAddFaq(q='', a='') {
   d.innerHTML = `<div class="dynamic-row-inner">
     <div class="faq-fields">
       <div class="field-group"><div class="row-label">Question ${i}</div><input type="text" name="ai_faq_q_${i}" placeholder="e.g. Do you offer day passes?" value="${q}"></div>
-      <div class="field-group"><div class="row-label">Answer</div><textarea name="ai_faq_a_${i}" placeholder="e.g. Yes — day passes are $20 and include full access.">${a}</textarea></div>
+      <div class="field-group"><div class="row-label">Answer</div><textarea name="ai_faq_a_${i}" placeholder="e.g. Yes, day passes are $20 and include full access.">${a}</textarea></div>
     </div>
     <button type="button" class="btn-remove" onclick="document.getElementById('ai-faq-${i}').remove()" style="align-self:flex-start;margin-top:22px">×</button>
   </div>`;
@@ -1255,7 +1255,7 @@ document.getElementById('ai-form').addEventListener('submit', async (e) => {
     document.getElementById('ai-success').classList.add('visible');
   } catch {
     btn.disabled = false; btn.textContent = 'Submit intake form';
-    banner.textContent = 'Network error — please try again.';
+    banner.textContent = 'Network error, please try again.';
     banner.classList.add('visible');
   }
 });
