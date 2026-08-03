@@ -232,9 +232,11 @@
     .step-num { font-family: var(--font-mono); font-size: 0.8rem; color: hsl(var(--gold)); padding-top: 0.45rem; }
 
     /* ===================== testimonials ===================== */
-    .quote-card { background: var(--gradient-card); border: 1px solid hsl(var(--navy-border)); border-left: 2px solid hsl(var(--gold)); padding: 1.9rem; transition: background 0.3s ease, transform 0.35s var(--ease-out-soft); }
-    .quote-card:hover { background: hsl(var(--navy-light)); transform: translateY(-4px); }
-    .quote-glyph { font-family: var(--font-accent); font-style: italic; font-size: 3.2rem; line-height: 1; color: hsl(var(--gold) / 0.4); user-select: none; }
+    /* Quotes read as a full-width pull quote now, not a card in a grid. Measure is
+       capped so the line length stays readable on a wide desktop. */
+    .quote-row { max-width: 62rem; }
+    .quote-row + .quote-row { margin-top: 3.25rem; padding-top: 3.25rem; border-top: 1px solid hsl(var(--border)); }
+    .quote-text { font-size: clamp(1.05rem, 1.8vw, 1.4rem); line-height: 1.66; }
 
     /* ===================== forms ===================== */
     .field-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: hsl(var(--muted-foreground)); display: block; margin-bottom: 0.4rem; }
@@ -265,7 +267,7 @@
       .js [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
       .js .bar { transform: none !important; transition: none !important; }
       .folio-numeral { transform: none !important; }
-      .btn-gold:hover, .btn-line:hover, .tier:hover, .quote-card:hover { transform: none; }
+      .btn-gold:hover, .btn-line:hover, .tier:hover { transform: none; }
     }
 
     @media (max-width: 767px) {
@@ -571,7 +573,7 @@
           <h2 class="font-display font-medium text-foreground leading-[1] mb-4" style="font-size:clamp(2.6rem,5vw,4.5rem)">What Our Clients <span class="accent gradient-text-gold">Say.</span></h2>
           <p class="font-body text-sm text-muted-foreground leading-relaxed mb-12">Real feedback from brands we've helped scale.</p>
         </div>
-        <div id="testimonials-list" class="grid md:grid-cols-3 gap-5 mb-10" data-reveal style="transition-delay:.08s">
+        <div id="testimonials-list" class="mb-12" data-reveal style="transition-delay:.08s">
         </div>
         <button type="button" id="submit-testimonial-btn" class="inline-flex items-center gap-2 px-8 py-4 font-mono text-[0.72rem] uppercase tracking-[0.14em] btn-gold" data-reveal>Submit a Testimonial</button>
       </div>
@@ -859,11 +861,10 @@
       }
       function renderTestimonialCard(t) {
         var div = document.createElement("div");
-        div.className = "quote-card";
-        div.innerHTML = '<div class="quote-glyph mb-3">"</div>' +
-          '<p class="font-body text-sm text-foreground/90 leading-relaxed mb-6">' + (t.testimonial_text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
-          '<div class="border-t pt-4" style="border-color:hsl(var(--border))"><div class="font-display text-lg font-medium text-gold">' + (t.full_name || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>' +
-          '<div class="mono-note mt-1">' + (t.title_role || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div></div>';
+        div.className = "quote-row";
+        div.innerHTML = '<p class="font-body quote-text text-foreground/90 mb-7">' + (t.testimonial_text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+          '<div class="font-display text-lg font-medium text-gold">' + (t.full_name || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>' +
+          '<div class="mono-note mt-1">' + (t.title_role || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
         return div;
       }
       function loadTestimonials() {
