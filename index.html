@@ -236,7 +236,7 @@
        capped so the line length stays readable on a wide desktop. */
     .quote-row { max-width: 62rem; }
     .quote-row + .quote-row { margin-top: 3.25rem; padding-top: 3.25rem; border-top: 1px solid hsl(var(--border)); }
-    .quote-text { font-size: clamp(1.05rem, 1.8vw, 1.4rem); line-height: 1.66; }
+    .quote-text { font-family: var(--font-accent); font-size: clamp(1.2rem, 2.1vw, 1.65rem); line-height: 1.55; }
 
     /* ===================== forms ===================== */
     .field-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: hsl(var(--muted-foreground)); display: block; margin-bottom: 0.4rem; }
@@ -862,7 +862,7 @@
       function renderTestimonialCard(t) {
         var div = document.createElement("div");
         div.className = "quote-row";
-        div.innerHTML = '<p class="font-body quote-text text-foreground/90 mb-7">' + (t.testimonial_text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
+        div.innerHTML = '<p class="quote-text text-foreground/90 mb-7">' + (t.testimonial_text || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</p>' +
           '<div class="font-display text-lg font-medium text-gold">' + (t.full_name || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>' +
           '<div class="mono-note mt-1">' + (t.title_role || '').replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
         return div;
