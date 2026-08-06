@@ -10,8 +10,8 @@ TheStatusQ is a small studio, not an agency network. Quinn Crowell is the founde
 
 ## What we do
 
-- **Lifecycle email and Klaviyo.** Welcome, abandoned cart, browse abandonment, post-purchase and win-back flows built in Klaviyo, plus ongoing campaign copy. Klaviyo setup runs $300 to $500. An ongoing email copywriting retainer is $800 per month for 3 to 5 emails a week, two-month minimum.
-- **Websites and landing pages.** Static and Next.js builds. A single landing page is $1,500. A starter funnel bundling a landing page, Klaviyo setup with UTM tracking and a five-email sequence is $2,200. A full package with a site, copy, a VSL script and a five-email sequence runs $3,500 to $5,000.
+- **Lifecycle email and Klaviyo.** Welcome, abandoned cart, browse abandonment, post-purchase and win-back flows built in Klaviyo, plus ongoing campaign copy. Klaviyo setup runs $800 to $1,200. An ongoing email copywriting retainer is $1,500 per month for 3 to 5 emails a week, two-month minimum.
+- **Websites and landing pages.** Static and Next.js builds. A single landing page is $1,500. A starter funnel bundling a landing page, Klaviyo setup with UTM tracking and a five-email sequence is $2,800. A full package with a site, copy, a VSL script and a five-email sequence runs $3,500 to $5,000.
 - **VSL scripts.** Video sales letter scripts for a specific offer.
 - **Ongoing maintenance.** A $250 per month retainer covering hosting, security and three content updates a month.
 
