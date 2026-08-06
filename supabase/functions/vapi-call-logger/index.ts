@@ -90,7 +90,7 @@ serve(async (req) => {
     const callerLabel = callerNumber ?? "unknown number";
     const bookingLabel = appointmentBooked ? " · ✅ Appt booked" : "";
     const messageLabel = messageTaken ? " · 📝 Message taken" : "";
-    const smsBody = `📞 New call — ${clientLabel}\n${durationLabel} · ${outcome}${bookingLabel}${messageLabel}\nCaller: ${callerLabel}`;
+    const smsBody = `📞 New call, ${clientLabel}\n${durationLabel} · ${outcome}${bookingLabel}${messageLabel}\nCaller: ${callerLabel}`;
 
     const twilioUrl = `https://api.twilio.com/2010-04-01/Accounts/${twilioSid}/Messages.json`;
     const auth = btoa(`${twilioSid}:${twilioToken}`);
