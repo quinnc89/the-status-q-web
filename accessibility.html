@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Accessibility Statement · TheStatusQ</title>
+<meta name="description" content="How TheStatusQ approaches accessibility, and how to report a barrier." />
+<style>
+  :root{ --bg:#ffffff; --fg:#1a1a1a; --dim:#4a4a4a; --line:#d4d4d4; --link:#0b4fa8; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:var(--bg);color:var(--fg);font:400 17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .skip{position:absolute;left:12px;top:-52px;background:var(--fg);color:var(--bg);padding:12px 18px;z-index:10;transition:top .15s;}
+  .skip:focus{top:12px;}
+  .wrap{max-width:720px;margin:0 auto;padding:40px 22px 90px;}
+  h1{font-size:2rem;line-height:1.2;margin-bottom:10px;font-weight:600;}
+  h2{font-size:1.2rem;margin:34px 0 10px;font-weight:600;}
+  p,li{margin-bottom:12px;}
+  ul{padding-left:22px;}
+  a{color:var(--link);}
+  a:focus-visible,.skip:focus-visible{outline:3px solid var(--link);outline-offset:2px;}
+  .meta{color:var(--dim);font-size:.92rem;margin-bottom:26px;}
+  .call{border-left:4px solid var(--link);background:#f3f7fd;padding:16px 18px;margin:22px 0;}
+  footer{border-top:1px solid var(--line);margin-top:46px;padding-top:22px;font-size:.92rem;color:var(--dim);}
+  footer a{display:inline-block;padding:6px 3px;}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="wrap">
+  <header>
+    <h1>Accessibility Statement</h1>
+    <p class="meta">For TheStatusQ. Last reviewed 29 July 2026.</p>
+  </header>
+
+  <main id="main">
+    <p>TheStatusQ is meant to be usable by everyone, including people who browse with a screen reader, navigate by keyboard, use magnification, or need reduced motion.</p>
+
+    <h2>The standard we build to</h2>
+    <p>This site was built to meet <strong>Web Content Accessibility Guidelines 2.1, Level AA</strong>. That is the benchmark used in most accessibility settlements and the one public bodies are held to, so it is the one we target.</p>
+    <p>We do not describe the site as certified, because no such certification exists for a website. What we can tell you is exactly what was checked and when.</p>
+
+    <h2>How it was tested</h2>
+    <ul>
+      <li>Automated testing with axe-core against the WCAG 2.0, 2.1 and 2.2 A and AA rulesets, at desktop, tablet and small phone widths.</li>
+      <li>A manual keyboard pass covering focus order, focus visibility, and the ability to reach and leave every interactive element.</li>
+      <li>Colour contrast checked by calculation rather than by eye, for text, buttons and interface elements.</li>
+      <li>A check that the page reflows without horizontal scrolling at 320 pixels and at 200 percent zoom.</li>
+      <li>A check that motion respects the reduced-motion setting, and that anything that loops can be stopped.</li>
+    </ul>
+    <p>Last full review: 29 July 2026.</p>
+
+    <h2>Known limitations</h2>
+    <p>Being straight about the gaps is more useful than claiming there are none.</p>
+    <ul>
+      <li>Some pages load fonts and scripts from outside services. If one of those fails to load, the page still works and stays readable, but the typeface will differ.</li>
+      <li>Content embedded from other services, such as video players, booking tools or social feeds, is controlled by those providers. Where an embed creates a barrier we offer another route to the same thing.</li>
+    </ul>
+
+    <h2>Tell us if something blocks you</h2>
+    <div class="call">
+      <p>If any part of this site is difficult or impossible to use, tell us and we will fix it. Describe the page and what happened, and we will reply within <strong>five business days</strong>.</p>
+      <p style="margin-bottom:0">Email <a href="mailto:hello@thestatusq.io">hello@thestatusq.io</a>.</p>
+    </div>
+    <p>If you need something on this site in another format, such as a document read out or supplied as plain text, ask and we will provide it at no cost.</p>
+
+    <h2>Who built it</h2>
+    <p>This site was built by TheStatusQ. Accessibility questions can go to the address above, and they will reach the people who can act on them.</p>
+  </main>
+
+  <footer>
+    <a href="/">Back to TheStatusQ</a>
+  </footer>
+</div>
+</body>
+</html>

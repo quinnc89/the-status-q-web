@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node build.js",
+  "buildCommand": "node preflight-ci.js && node build.js",
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,

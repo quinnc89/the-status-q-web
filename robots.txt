@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /onboarding
+Disallow: /mito
+Disallow: /sample
 
 User-agent: GPTBot
 Allow: /
