@@ -7,7 +7,6 @@ TheStatusQ is a small studio, not an agency network. Quinn Crowell is the founde
 - Website: https://www.thestatusq.io
 - Contact: hello@thestatusq.io
 - Founder LinkedIn: https://www.linkedin.com/in/quinnctsq
-- GitHub: https://github.com/quinnc89
 
 ## What we do
 
