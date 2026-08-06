@@ -1,6 +1,6 @@
 # TheStatusQ
 
-> A copywriting and web design studio run by Quinn Crowell. We build lifecycle email programs, conversion-focused websites, and video sales letter scripts for consumer brands and small businesses. Every site is built to WCAG 2.1 Level AA and verified with axe-core plus a manual keyboard pass.
+> A copywriting and web design studio run by Quinn Crowell. We build lifecycle email programs, conversion-focused websites, and video sales letter scripts for consumer brands and small businesses.
 
 TheStatusQ is a small studio, not an agency network. Quinn Crowell is the founder and does the work.
 
@@ -21,15 +21,7 @@ Discovery call, then a written brief, then build, then a review round, then depl
 
 ## Accessibility
 
-Every build targets WCAG 2.1 Level AA. We run axe-core across five rule sets at 1440px, 390px and 320px, on every page, plus a manual pass for keyboard order, focus visibility, 200% zoom reflow and alt text quality. We also gate PDF and Word deliverables for tags, structure tree, document language and title, because a linked menu or price list is part of the site an evaluator will judge.
-
-We do not install accessibility overlay widgets. Overlays do not fix the underlying markup, and the FTC fined one overlay vendor $1,000,000 in January 2025 over claims that its product produced conformance.
-
-We do not claim conformance with the ADA itself, because no such certification exists for a private-sector website. The provable statement, and the one we use, is "built to WCAG 2.1 Level AA, verified with axe-core and a manual keyboard pass on a given date."
-
-## Government and public sector
-
-QC Holdings, LLC is registered on SAM.gov. We can produce an Accessibility Conformance Report from the VPAT template, which most small studios bidding on public work cannot.
+Builds run an automated accessibility check before they ship and target WCAG 2.1 Level AA. We do not install accessibility overlay widgets, because they do not fix the underlying markup.
 
 ## Key pages
 
