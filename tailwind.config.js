@@ -1,6 +1,6 @@
 module.exports = {
   darkMode: ["class"],
-  content: ["./index.html", "./klaviyo-setup.html"],
+  content: ["./index.html", "./klaviyo-setup.html", "./website-design.html", "./ai-automation.html"],
   safelist: ["hidden","font-body","text-xs","text-red-400","text-gold","quote-row"],
   theme: { extend: {
     colors: {
