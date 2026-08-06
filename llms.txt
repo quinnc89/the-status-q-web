@@ -13,7 +13,10 @@ TheStatusQ is a small studio, not an agency network. Quinn Crowell is the founde
 - **Lifecycle email and Klaviyo.** Welcome, abandoned cart, browse abandonment, post-purchase and win-back flows built in Klaviyo, plus ongoing campaign copy. Klaviyo setup runs $800 to $1,200. An ongoing email copywriting retainer is $1,500 per month for 3 to 5 emails a week, two-month minimum.
 - **Websites and landing pages.** Static and Next.js builds. A single landing page is $1,500. A starter funnel bundling a landing page, Klaviyo setup with UTM tracking and a five-email sequence is $2,800. A full package with a site, copy, a VSL script and a five-email sequence runs $3,500 to $5,000.
 - **VSL scripts.** Video sales letter scripts for a specific offer.
+- **AI receptionist.** A phone assistant that answers calls, qualifies the caller and books into your calendar. $1,500 to set up and $800 per month.
 - **Ongoing maintenance.** A $250 per month retainer covering hosting, security and three content updates a month.
+
+Every price is published at https://www.thestatusq.io/pricing with nothing behind a form.
 
 ## How we work
 
@@ -26,3 +29,8 @@ Builds run an automated accessibility check before they ship and target WCAG 2.1
 ## Key pages
 
 - [Homepage](https://www.thestatusq.io/): services, process, pricing context and a nine-question FAQ.
+- [Pricing](https://www.thestatusq.io/pricing): the full rate card in plain numbers, what is excluded, minimums, and what the client owns afterwards.
+- [Klaviyo setup](https://www.thestatusq.io/klaviyo-setup): what a Klaviyo setup includes, what it costs and how long it takes.
+- [Email copywriting retainer](https://www.thestatusq.io/email-copywriting): ongoing campaign writing, how it differs from the one-time flow setup, and what the client supplies each week.
+- [Website design and build](https://www.thestatusq.io/website-design): hand-coded sites and landing pages, cost by scope, and what happens after launch.
+- [AI receptionist and automation](https://www.thestatusq.io/ai-automation): what the phone assistant does, who it suits, and what it costs.
