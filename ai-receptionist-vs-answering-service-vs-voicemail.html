@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Receptionist vs Answering Service vs Voicemail | TheStatusQ</title>
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="TheStatusQ">
+  <meta property="og:title" content="AI Receptionist vs Answering Service vs Voicemail">
+  <meta property="og:description" content="Voicemail is free and loses the caller. A live answering service runs roughly $200 to $600 a month. An AI receptionist is $1,500 to set up and $800 a month, and it books the appointment instead of taking a message.">
+  <meta property="og:url" content="https://www.thestatusq.io/ai-receptionist-vs-answering-service-vs-voicemail">
+  <meta property="og:image" content="https://www.thestatusq.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Receptionist vs Answering Service vs Voicemail">
+  <meta name="twitter:description" content="Voicemail is free and loses the caller. A live answering service runs roughly $200 to $600 a month. An AI receptionist is $1,500 to set up and $800 a month, and it books the appointment instead of taking a message.">
+  <meta name="twitter:image" content="https://www.thestatusq.io/og-image.png">
+  <!-- SEO -->
+  <meta name="description" content="Voicemail is free and loses the caller. A live answering service runs roughly $200 to $600 a month. An AI receptionist is $1,500 to set up and $800 a month, and it books the appointment instead of taking a message.">
+  <link rel="canonical" href="https://www.thestatusq.io/ai-receptionist-vs-answering-service-vs-voicemail">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23d4af37'>Q</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+  <style>
+    :root {
+      --background: 220 52% 5%;
+      --foreground: 210 30% 94%;
+      --card: 220 45% 8%;
+      --primary: 213 85% 55%;
+      --primary-foreground: 220 52% 5%;
+      --muted: 220 35% 14%;
+      --muted-foreground: 215 20% 55%;
+      --accent: 42 75% 54%;
+      --accent-foreground: 220 52% 5%;
+      --border: 220 35% 16%;
+      --navy-deep: 220 52% 5%;
+      --navy-mid: 220 45% 8%;
+      --navy-light: 220 40% 13%;
+      --navy-border: 220 35% 20%;
+      --gold: 42 75% 54%;
+      --blue-glow: 213 85% 55%;
+      --blue-soft: 213 60% 65%;
+      --font-display: 'Libre Caslon Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-accent: 'Libre Caslon Text', Georgia, serif;
+      --font-mono: 'DM Sans', system-ui, sans-serif;
+      --gradient-card: linear-gradient(145deg, hsl(220, 45%, 9%) 0%, hsl(220, 40%, 7%) 100%);
+      --gradient-gold: linear-gradient(135deg, hsl(42, 75%, 54%), hsl(38, 70%, 45%));
+      --gradient-blue: linear-gradient(135deg, hsl(213, 85%, 55%), hsl(225, 80%, 45%));
+      --shadow-gold-glow: 0 0 30px -6px hsl(42 75% 54% / 0.35);
+      --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { border-color: hsl(var(--border)); box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    ::selection { background: hsl(var(--gold) / 0.85); color: hsl(var(--accent-foreground)); }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.01em; margin: 0; }
+    .font-display { font-family: var(--font-display); }
+    .font-body { font-family: var(--font-body); }
+    .font-mono { font-family: var(--font-mono); }
+    .accent { font-family: var(--font-accent); font-style: italic; font-weight: 500; letter-spacing: 0; }
+    .gradient-text-gold { background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .card-glass { background: var(--gradient-card); border: 1px solid hsl(var(--navy-border)); }
+    .text-gold { color: hsl(var(--gold)); }
+
+    .eyebrow { font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: hsl(var(--gold)); display: inline-flex; align-items: center; gap: 0.6rem; }
+    .mono-note { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: hsl(var(--muted-foreground)); }
+
+    .headline-hero { font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1.02; font-weight: 500; }
+
+    .margin-note { position: absolute; left: 1.4rem; top: 50%; transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl; font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.34em; text-transform: uppercase; color: hsl(var(--muted-foreground) / 0.7); display: none; }
+    @media (min-width: 1280px) { .margin-note { display: block; } }
+
+    .btn-gold { background: var(--gradient-gold); color: hsl(var(--accent-foreground)); transition: transform 0.28s var(--ease-out-soft), box-shadow 0.28s ease; }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: var(--shadow-gold-glow); }
+    .btn-gold:active { transform: translateY(0); }
+    .btn-line { border: 1px solid hsl(var(--border)); color: hsl(var(--foreground)); transition: border-color 0.28s ease, background 0.28s ease, transform 0.28s var(--ease-out-soft); }
+    .btn-line:hover { border-color: hsl(var(--gold) / 0.5); background: hsl(var(--navy-light)); transform: translateY(-2px); }
+    .link-underline { position: relative; }
+    .link-underline::after { content: ""; position: absolute; left: 0; bottom: -3px; height: 1px; width: 100%; background: hsl(var(--gold)); transform: scaleX(0); transform-origin: right; transition: transform 0.32s var(--ease-out-soft); }
+    .link-underline:hover::after { transform: scaleX(1); transform-origin: left; }
+    a:focus-visible, button:focus-visible { outline: 2px solid hsl(var(--gold)); outline-offset: 2px; }
+
+    #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 60; border-bottom: 1px solid transparent; transition: background 0.35s ease, border-color 0.35s ease; }
+    #site-header.settled { background: hsl(220 52% 5% / 0.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: hsl(var(--border)); }
+    #read-progress { position: absolute; left: 0; bottom: -1px; height: 1px; width: 100%; background: var(--gradient-gold); transform: scaleX(0); transform-origin: left; }
+
+    .tier { background: var(--gradient-card); border: 1px solid hsl(var(--navy-border)); padding: 1.75rem; position: relative; transition: transform 0.35s var(--ease-out-soft), border-color 0.35s ease, box-shadow 0.35s ease; }
+    .tier:hover { transform: translateY(-5px); border-color: hsl(var(--gold) / 0.45); box-shadow: 0 18px 44px -18px hsl(220 60% 2% / 0.9); }
+    .tier--featured { border-color: hsl(var(--gold) / 0.55); box-shadow: 0 0 44px -14px hsl(var(--gold) / 0.3); }
+
+    .ledger { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: hsl(var(--border)); border: 1px solid hsl(var(--navy-border)); align-content: start; }
+    .ledger-cell { background: hsl(220 45% 8%); padding: 1.15rem 1.1rem; }
+    @media (max-width: 30rem) { .ledger { grid-template-columns: 1fr; } }
+
+    .step-num { font-family: var(--font-mono); font-size: 0.8rem; color: hsl(var(--gold)); }
+
+    /* The lead answer sits in its own rule so it reads as a definition, both to a
+       skimming human and to anything extracting a short answer from the page. */
+    .answer-block { border-left: 2px solid hsl(var(--gold)); padding-left: 1.6rem; max-width: 46rem; }
+    .answer-block p { font-family: var(--font-body); font-size: 1.125rem; line-height: 1.65; color: hsl(var(--foreground)); margin: 0; }
+
+    /* Wide by nature. The wrapper scrolls on its own so the page body never does. */
+    .cmp-wrap { overflow-x: auto; border: 1px solid hsl(var(--navy-border)); -webkit-overflow-scrolling: touch; }
+    .cmp-table { width: 100%; min-width: 52rem; border-collapse: collapse; }
+    .cmp-table caption { text-align: left; padding: 1rem 1.15rem; font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: hsl(var(--muted-foreground)); border-bottom: 1px solid hsl(var(--border)); }
+    .cmp-table th, .cmp-table td { padding: 1rem 1.15rem; text-align: left; vertical-align: top; border-bottom: 1px solid hsl(var(--border)); font-size: 0.9rem; line-height: 1.55; font-weight: 400; }
+    .cmp-table thead th { font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: hsl(var(--gold)); background: hsl(var(--navy-light)); }
+    .cmp-table tbody th { font-family: var(--font-display); font-size: 1rem; font-weight: 500; color: hsl(var(--foreground)); width: 20%; }
+    .cmp-table tbody td { color: hsl(var(--muted-foreground)); }
+    .cmp-table .col-mine { background: hsl(42 75% 54% / 0.05); color: hsl(var(--foreground)); }
+    .cmp-table thead .col-mine { background: hsl(42 75% 54% / 0.13); }
+    .cmp-table tbody tr:last-child th, .cmp-table tbody tr:last-child td { border-bottom: 0; }
+
+    .faq-item { border-top: 1px solid hsl(var(--border)); padding: 2rem 0; }
+    .faq-item:last-child { border-bottom: 1px solid hsl(var(--border)); }
+
+    .js [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity 0.9s var(--ease-out-soft), transform 0.9s var(--ease-out-soft); }
+    .js [data-reveal].in-view { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .btn-gold:hover, .btn-line:hover, .tier:hover { transform: none; }
+    }
+  </style>
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+  <link rel="stylesheet" href="/tailwind.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI Receptionist vs Answering Service vs Voicemail: Cost and Fit Compared",
+  "description": "What each option costs, what each one actually does with a caller, and which is the right answer for a small service business that keeps missing calls.",
+  "url": "https://www.thestatusq.io/ai-receptionist-vs-answering-service-vs-voicemail",
+  "datePublished": "2026-08-15",
+  "dateModified": "2026-08-15",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Quinn Crowell",
+    "url": "https://www.linkedin.com/in/quinnctsq",
+    "jobTitle": "Founder",
+    "worksFor": { "@type": "ProfessionalService", "name": "TheStatusQ" }
+  },
+  "publisher": {
+    "@type": "ProfessionalService",
+    "name": "TheStatusQ",
+    "url": "https://www.thestatusq.io"
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.thestatusq.io/ai-receptionist-vs-answering-service-vs-voicemail" }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between an AI receptionist and an answering service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An answering service is staffed by people who take a message and pass it on. An AI receptionist is software that answers the call, asks your qualifying questions, and writes the appointment straight into your calendar. The practical difference is what the caller has at the end of the call. With a message service they are still waiting for you. With a booking assistant they have a time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does an AI receptionist cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TheStatusQ charges $1,500 to set one up and $800 per month to run it. The setup covers the call script, the qualifying questions, the calendar connection and the testing. Larger builds that add automated follow up, CRM writeback and SMS, or a complete funnel around the phone line, are quoted per build."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a live answering service cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Published vendor rates in 2026 commonly sit between $0.65 and $1.75 per minute, or roughly $200 to $600 a month for a traditional live service at small business volumes. Watch the billing detail rather than the headline rate, because setup fees, per minute rounding, overage rates and holiday surcharges are where the real monthly figure is decided."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is voicemail good enough for a small business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if your callers are patient and have no alternative. Voicemail asks the caller to do work and then wait, at exactly the moment they were ready to buy. CallRail reports that on average 28 percent of calls to businesses go unanswered, and cites LeanData's finding that 78 percent of customers buy from the first company that responds. Voicemail guarantees you are not first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will an AI receptionist annoy my callers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can, if it is built to deflect rather than to help. The two things that decide it are whether the assistant can actually complete the task the caller phoned about, and whether saying anything like operator or human hands the call straight to a person. An assistant that books appointments and transfers everything else tends to be well received. One that loops a caller through a menu does not."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which businesses should not buy an AI receptionist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Businesses with low call volume, businesses whose calls are genuinely complex on the first contact, and anyone handling calls where a wrong answer carries clinical, legal or safety consequences. If you take four calls a week, a shared inbox and a callback habit will cost you nothing and work fine."
+      }
+    }
+  ]
+}
+  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X30WC5BPV1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X30WC5BPV1');
+</script>
+</head>
+<body class="bg-background text-foreground">
+
+  <header id="site-header">
+    <div class="max-w-[88rem] mx-auto px-6 lg:px-10 h-[4.25rem] flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="/" class="font-display text-2xl font-semibold tracking-tight text-foreground">The<span class="gradient-text-gold">StatusQ</span></a>
+        <span class="mono-note border border-gold/30 px-2 py-0.5 hidden sm:inline text-gold">[ AGENCY ]</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+        <a href="/#services" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Services</a>
+        <a href="/pricing" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
+        <a href="/#ai-automation" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">AI</a>
+        <a href="/#results" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Results</a>
+        <a href="/#process" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Process</a>
+        <a href="/#faq" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
+      </nav>
+      <a href="/#contact" class="inline-flex items-center gap-2 px-5 py-2 text-[0.7rem] font-mono uppercase tracking-[0.14em] btn-gold">Start a Project</a>
+    </div>
+    <span id="read-progress" aria-hidden="true"></span>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO + ANSWER FIRST ===================== -->
+    <section class="pt-28 pb-14 lg:pt-36 lg:pb-20 relative">
+      <span class="margin-note">AI Receptionist &amp; Automation</span>
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">Comparison</p>
+        <h1 class="headline-hero mb-8 max-w-4xl">AI receptionist vs answering service vs <span class="gradient-text-gold">voicemail</span></h1>
+        <div class="answer-block mb-9">
+          <p>
+            Voicemail costs nothing and takes a message the caller may never leave. A live answering service costs roughly $200 to $600 a month at small business volumes and also takes a message, though a person takes it. An AI receptionist is $1,500 to set up and $800 a month, and instead of taking a message it asks your qualifying questions and books the appointment. The right choice depends almost entirely on your call volume.
+          </p>
+        </div>
+        <p class="font-body text-base leading-relaxed text-muted-foreground max-w-2xl mb-3">
+          Below is the cost comparison, what each one does with a caller in practice, and the volume at which each becomes the correct purchase.
+        </p>
+        <p class="mono-note">Last updated 15 August 2026 · Written by Quinn Crowell, founder of TheStatusQ</p>
+        <div class="flex flex-wrap gap-4 mt-9">
+          <a href="/#contact" class="inline-flex items-center gap-2 px-6 py-3 text-[0.72rem] font-mono uppercase tracking-[0.14em] btn-gold">Start a Project →</a>
+          <a href="/ai-automation" class="inline-flex items-center gap-2 px-6 py-3 text-[0.72rem] font-mono uppercase tracking-[0.14em] btn-line">See the AI Service</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TABLE ===================== -->
+    <section id="compared" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">01</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-10">What does each option cost and do?</h2>
+        <div class="cmp-wrap" data-reveal>
+          <table class="cmp-table">
+            <caption>Call handling options compared. Answering service figures are published vendor ranges as of August 2026.</caption>
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Voicemail</th>
+                <th scope="col">Live answering service</th>
+                <th scope="col" class="col-mine">AI receptionist</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Cost to start</th>
+                <td>Nothing</td>
+                <td>Often a setup fee of $50 to $200</td>
+                <td class="col-mine">$1,500 one time</td>
+              </tr>
+              <tr>
+                <th scope="row">Cost to run</th>
+                <td>Nothing</td>
+                <td>Roughly $0.65 to $1.75 a minute, or about $200 to $600 a month at small business volumes</td>
+                <td class="col-mine">$800 a month, flat</td>
+              </tr>
+              <tr>
+                <th scope="row">Cost per extra call</th>
+                <td>Nothing</td>
+                <td>Rises with every call, which is worst in your busiest month</td>
+                <td class="col-mine">Nothing, the monthly fee does not move with volume</td>
+              </tr>
+              <tr>
+                <th scope="row">What the caller gets</th>
+                <td>A recording and a wait</td>
+                <td>A human, then a wait for your callback</td>
+                <td class="col-mine">A booked time before they hang up</td>
+              </tr>
+              <tr>
+                <th scope="row">Hours covered</th>
+                <td>All hours</td>
+                <td>Whatever you pay for, and 24 hour cover costs more</td>
+                <td class="col-mine">All hours at the same price</td>
+              </tr>
+              <tr>
+                <th scope="row">Handles two calls at once</th>
+                <td>Yes, badly</td>
+                <td>Usually, subject to their staffing</td>
+                <td class="col-mine">Yes</td>
+              </tr>
+              <tr>
+                <th scope="row">Knows your business</th>
+                <td>Not applicable</td>
+                <td>Works from a script, and staff rotate</td>
+                <td class="col-mine">Works from a script you wrote and can change the same day</td>
+              </tr>
+              <tr>
+                <th scope="row">Judgement on an unusual call</th>
+                <td>None</td>
+                <td>Best of the three, a person can improvise</td>
+                <td class="col-mine">Limited, which is why it should transfer rather than guess</td>
+              </tr>
+              <tr>
+                <th scope="row">Best fit</th>
+                <td>Under about five calls a week</td>
+                <td>Complex or sensitive first contact where a person is the point</td>
+                <td class="col-mine">Repeatable booking calls at steady or unpredictable volume</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="font-body text-sm text-muted-foreground mt-5 max-w-3xl">
+          Answering service ranges are compiled from published 2026 vendor pricing pages and vary widely by provider, call length and coverage hours. AI receptionist prices are TheStatusQ's own published rates.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== THE REAL COST ===================== -->
+    <section id="missed" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">02</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">What a missed call actually costs, with the numbers that hold up</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">This subject attracts some of the least reliable statistics on the internet, so here is only what has a traceable source behind it.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5"><a href="https://www.callrail.com/blog/missed-calls-costing-your-business" rel="nofollow" class="link-underline text-gold">CallRail reports</a> that on average 28 percent of all calls to businesses go unanswered, drawn from its own customer call data. The same piece cites LeanData's finding that 78 percent of customers buy from the first company that responds to their enquiry, and Small Biz Trends' finding that 60 percent of small business customers prefer to phone when they are ready to book or buy.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Put those together and the shape of the problem is clear enough without exaggerating it. A meaningful share of your calls are already going unanswered, the people making them chose the phone deliberately, and being first to respond is most of the contest.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">You will also see confident claims that 86 percent or 90 percent of callers hang up rather than leave a voicemail. Those figures circulate widely and none of the versions we could trace name a study, a sample or a year. They are quoted here only to say that they should not be relied on, including when somebody selling you call software quotes them.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VOICEMAIL ===================== -->
+    <section id="voicemail" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">03</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">When voicemail is genuinely fine</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Voicemail is free, and free is a strong argument at low volume. If you take four or five calls a week and you return them within the hour, you do not have a problem worth $800 a month to solve.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Its weakness is specific rather than general. Voicemail asks the caller to perform a task, state a problem to a machine, and then wait an unknown length of time, at the exact moment they had decided to act. Callers who have three other numbers to try tend to try them.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">Before spending anything, do the cheap version of the diagnosis. Look at your call log for the last month, count the calls that went unanswered, and count how many of those people you eventually spoke to. If that gap is small, keep your money.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ANSWERING SERVICE ===================== -->
+    <section id="answering" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">04</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-6">What a live answering service does well, and what to check</h2>
+        <p class="font-body text-lg text-muted-foreground mb-10 max-w-3xl">A person on the phone is still the best available option for a caller who is upset, confused or describing something unusual. That is worth real money, and no software matches it. The things to check are all in the billing.</p>
+        <div class="ledger" data-reveal>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">The rounding increment</h3><p class="font-body text-muted-foreground leading-relaxed">A forty second call billed in one minute increments is a sixty second call. On a per minute plan the rounding rule is often worth more than the rate.</p></div>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">Overage rates</h3><p class="font-body text-muted-foreground leading-relaxed">The advertised price usually covers a bundle of minutes. Ask what a minute costs once the bundle is gone, because that is the price you pay in your busiest month.</p></div>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">What counts as a billable minute</h3><p class="font-body text-muted-foreground leading-relaxed">Some providers bill hold time, wrap up time and the call to relay the message to you. Ask for it in writing.</p></div>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">Whether they can book</h3><p class="font-body text-muted-foreground leading-relaxed">Many services take messages and do not touch your calendar. If the outcome is still a callback, you have paid for a politer voicemail.</p></div>
+        </div>
+        <p class="font-body text-muted-foreground leading-relaxed mt-8 max-w-3xl">The structural issue is that cost scales with success. A good month means more calls, more minutes and a larger invoice, which is an awkward incentive to carry.</p>
+      </div>
+    </section>
+
+    <!-- ===================== AI ===================== -->
+    <section id="ai" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">05</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">What an AI receptionist actually does on a call</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">It answers immediately, greets the caller in your business's name, asks the questions you decided matter, checks your live calendar, offers real times, and writes the booking in. The caller hangs up with an appointment rather than a promise.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">The qualifying step is the part that earns the fee. A receptionist that asks what the job is, where it is, and roughly when it is needed can sort a serious enquiry from a price shopper before the appointment exists, which is work you would otherwise do yourself at the end of the day.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">The flat price is the other structural difference. At $800 a month the cost does not move when call volume doubles, so a busy month is simply a better month rather than a larger invoice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHEN NOT ===================== -->
+    <section id="when-not" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">06</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">When an AI receptionist is the wrong purchase</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">There are four situations where it should not be sold to you, and they are worth naming because most pages on this subject do not.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">The first is low volume. Under roughly twenty calls a month the arithmetic does not work and a returned call costs you nothing. The second is genuinely complex first contact, where the caller is describing a problem that has no standard shape and the whole value of the call is a person understanding it. The third is anything clinical, legal or safety related, where a confidently wrong answer is a serious matter rather than an inconvenience. The fourth is a business whose customers phone specifically because they want to speak to the owner.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">Where it does fit is repeatable booking work: trades, clinics, salons, studios, home services and any practice where most calls are a person trying to get on the schedule.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DECISION ===================== -->
+    <section id="decide" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">07</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-10">Pick by call volume, not by preference</h2>
+        <div class="grid md:grid-cols-3 gap-6" data-reveal>
+          <div class="tier"><p class="mono-note mb-3">Under 20 calls a month</p><h3 class="font-display text-2xl mb-3 text-gold">Voicemail and a habit</h3><p class="font-body text-muted-foreground leading-relaxed">Set a rule that voicemails are returned within the hour during working days. That single habit beats most paid options at this volume and costs nothing.</p></div>
+          <div class="tier tier--featured"><p class="mono-note mb-3">20 to 200 calls a month</p><h3 class="font-display text-2xl mb-3 text-gold">AI receptionist</h3><p class="font-body text-muted-foreground leading-relaxed">This is the band where a flat $800 a month is cheaper than per minute billing and where enough of the calls are the same shape for a script to handle them properly.</p></div>
+          <div class="tier"><p class="mono-note mb-3">Complex or sensitive calls</p><h3 class="font-display text-2xl mb-3 text-gold">Live answering service</h3><p class="font-body text-muted-foreground leading-relaxed">If a wrong answer matters, or the caller is usually distressed, pay for a person. The higher per minute cost is buying judgement, and judgement is what those calls need.</p></div>
+        </div>
+        <p class="font-body text-muted-foreground leading-relaxed mt-8 max-w-3xl">The two can also be combined. The assistant handles booking calls and anything outside its script transfers to a person or to you, which keeps the cheap path cheap without leaving the hard calls unattended.</p>
+      </div>
+    </section>
+
+    <!-- ===================== OURS ===================== -->
+    <section id="ours" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">08</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">What TheStatusQ builds and charges</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">An <a href="/ai-automation" class="link-underline text-gold">AI receptionist</a> that answers calls, qualifies the caller and books into your calendar is $1,500 to set up and $800 per month. The setup covers the call script, the qualifying questions, the calendar connection, the transfer rules and the testing before it goes live on your real number.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Larger builds that add automated follow up, CRM writeback and SMS, or that wrap a complete funnel around the phone line, are quoted per build rather than sold from a list. Every standard price is on the <a href="/pricing" class="link-underline text-gold">pricing page</a>.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">Before any of it, the honest first step is to look at your call log together. If the numbers say you do not need this, that is a shorter conversation and a better one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">09</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-10">Frequently asked questions</h2>
+        <div class="max-w-4xl">
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">What is the difference between an AI receptionist and an answering service?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">An answering service is staffed by people who take a message and pass it on. An AI receptionist is software that answers the call, asks your qualifying questions, and writes the appointment straight into your calendar. The practical difference is what the caller has at the end of the call. With a message service they are still waiting for you. With a booking assistant they have a time.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">How much does an AI receptionist cost?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">TheStatusQ charges $1,500 to set one up and $800 per month to run it. The setup covers the call script, the qualifying questions, the calendar connection and the testing. Larger builds that add automated follow up, CRM writeback and SMS, or a complete funnel around the phone line, are quoted per build.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">How much does a live answering service cost?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">Published vendor rates in 2026 commonly sit between $0.65 and $1.75 per minute, or roughly $200 to $600 a month for a traditional live service at small business volumes. Watch the billing detail rather than the headline rate, because setup fees, per minute rounding, overage rates and holiday surcharges are where the real monthly figure is decided.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">Is voicemail good enough for a small business?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">Only if your callers are patient and have no alternative. Voicemail asks the caller to do work and then wait, at exactly the moment they were ready to buy. CallRail reports that on average 28 percent of calls to businesses go unanswered, and cites LeanData's finding that 78 percent of customers buy from the first company that responds. Voicemail guarantees you are not first.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">Will an AI receptionist annoy my callers?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">It can, if it is built to deflect rather than to help. The two things that decide it are whether the assistant can actually complete the task the caller phoned about, and whether saying anything like operator or human hands the call straight to a person. An assistant that books appointments and transfers everything else tends to be well received. One that loops a caller through a menu does not.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">Which businesses should not buy an AI receptionist?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">Businesses with low call volume, businesses whose calls are genuinely complex on the first contact, and anyone handling calls where a wrong answer carries clinical, legal or safety consequences. If you take four calls a week, a shared inbox and a callback habit will cost you nothing and work fine.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section id="cta" class="py-20 lg:py-28 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 text-center">
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-6 max-w-3xl mx-auto">Tell me how many calls you take in a normal week and how many you miss, and I will tell you which of these three you should buy.</h2>
+        <a href="/#contact" class="inline-flex items-center gap-2 px-7 py-3.5 text-[0.72rem] font-mono uppercase tracking-[0.14em] btn-gold mt-4">Start a Project →</a>
+      </div>
+    </section>
+
+    <!-- ===================== RELATED ===================== -->
+    <section class="py-14 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-6">Keep reading</p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/ai-automation" class="card-glass p-6 block hover:border-gold/40 transition-colors"><h3 class="font-display text-xl mb-2 text-gold">AI receptionist and automation</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">What the phone assistant does, who it suits, and what it costs.</p></a>
+          <a href="/pricing" class="card-glass p-6 block hover:border-gold/40 transition-colors"><h3 class="font-display text-xl mb-2 text-gold">The full rate card</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Every price in plain numbers, with nothing behind a form.</p></a>
+          <a href="/custom-website-vs-shopify-theme-vs-website-builder" class="card-glass p-6 block hover:border-gold/40 transition-colors"><h3 class="font-display text-xl mb-2 text-gold">Custom site vs theme vs builder</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">What each route costs, and the point at which each one runs out.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <section class="pb-16 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <div class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3"><a href="/" class="font-display text-lg font-semibold text-foreground">The<span class="gradient-text-gold">StatusQ</span></a></div>
+          <div class="flex flex-wrap gap-x-6 gap-y-3 items-center">
+            <a href="/pricing" class="link-underline mono-note hover:text-foreground transition-colors">PRICING</a>
+            <a href="/privacy" class="link-underline mono-note hover:text-foreground transition-colors">PRIVACY</a>
+            <a href="/accessibility" class="link-underline mono-note hover:text-foreground transition-colors">ACCESSIBILITY</a>
+            <span class="mono-note">© <span id="year"></span> THESTATUSQ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      var y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+
+      var header = document.getElementById("site-header");
+      var progress = document.getElementById("read-progress");
+      var ticking = false;
+      window.addEventListener("scroll", function () {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          var sc = window.scrollY || document.documentElement.scrollTop;
+          header.classList.toggle("settled", sc > 24);
+          var max = document.documentElement.scrollHeight - window.innerHeight;
+          progress.style.transform = "scaleX(" + (max > 0 ? Math.min(1, sc / max) : 0) + ")";
+          ticking = false;
+        });
+      }, { passive: true });
+
+      var revealEls = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add("in-view"); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.16, rootMargin: "0px 0px -7% 0px" });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add("in-view"); });
+      }
+    });
+  </script>
+</body>
+</html>

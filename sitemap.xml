@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.thestatusq.io/</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.thestatusq.io/klaviyo-setup</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.thestatusq.io/website-design</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.thestatusq.io/ai-automation</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.thestatusq.io/klaviyo-setup</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.thestatusq.io/website-design</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.thestatusq.io/ai-automation</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.thestatusq.io/pricing</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.thestatusq.io/email-copywriting</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.thestatusq.io/vsl-scripts</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.thestatusq.io/email-copywriting</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.thestatusq.io/vsl-scripts</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.thestatusq.io/klaviyo-agency-vs-freelancer-vs-in-house</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.thestatusq.io/custom-website-vs-shopify-theme-vs-website-builder</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.thestatusq.io/ai-receptionist-vs-answering-service-vs-voicemail</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.thestatusq.io/klaviyo-flow-setup-vs-email-retainer</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.thestatusq.io/copywriter-vs-ai-copywriting-tools</loc><lastmod>2026-08-15</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.thestatusq.io/privacy</loc><lastmod>2026-08-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.thestatusq.io/accessibility</loc><lastmod>2026-08-06</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>

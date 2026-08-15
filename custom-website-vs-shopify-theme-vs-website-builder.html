@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Website vs Shopify Theme vs Wix or Squarespace | TheStatusQ</title>
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="TheStatusQ">
+  <meta property="og:title" content="Custom Website vs Shopify Theme vs Wix or Squarespace">
+  <meta property="og:description" content="A premium Shopify theme is $180 to $400 once. Squarespace is about $29 a month and Wix Business about $39. A hand coded landing page is $1,500 and a full custom site is $8,000 to $15,000.">
+  <meta property="og:url" content="https://www.thestatusq.io/custom-website-vs-shopify-theme-vs-website-builder">
+  <meta property="og:image" content="https://www.thestatusq.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Custom Website vs Shopify Theme vs Wix or Squarespace">
+  <meta name="twitter:description" content="A premium Shopify theme is $180 to $400 once. Squarespace is about $29 a month and Wix Business about $39. A hand coded landing page is $1,500 and a full custom site is $8,000 to $15,000.">
+  <meta name="twitter:image" content="https://www.thestatusq.io/og-image.png">
+  <!-- SEO -->
+  <meta name="description" content="A premium Shopify theme is $180 to $400 once. Squarespace is about $29 a month and Wix Business about $39. A hand coded landing page is $1,500 and a full custom site is $8,000 to $15,000.">
+  <link rel="canonical" href="https://www.thestatusq.io/custom-website-vs-shopify-theme-vs-website-builder">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23d4af37'>Q</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+  <style>
+    :root {
+      --background: 220 52% 5%;
+      --foreground: 210 30% 94%;
+      --card: 220 45% 8%;
+      --primary: 213 85% 55%;
+      --primary-foreground: 220 52% 5%;
+      --muted: 220 35% 14%;
+      --muted-foreground: 215 20% 55%;
+      --accent: 42 75% 54%;
+      --accent-foreground: 220 52% 5%;
+      --border: 220 35% 16%;
+      --navy-deep: 220 52% 5%;
+      --navy-mid: 220 45% 8%;
+      --navy-light: 220 40% 13%;
+      --navy-border: 220 35% 20%;
+      --gold: 42 75% 54%;
+      --blue-glow: 213 85% 55%;
+      --blue-soft: 213 60% 65%;
+      --font-display: 'Libre Caslon Display', Georgia, serif;
+      --font-body: 'DM Sans', system-ui, sans-serif;
+      --font-accent: 'Libre Caslon Text', Georgia, serif;
+      --font-mono: 'DM Sans', system-ui, sans-serif;
+      --gradient-card: linear-gradient(145deg, hsl(220, 45%, 9%) 0%, hsl(220, 40%, 7%) 100%);
+      --gradient-gold: linear-gradient(135deg, hsl(42, 75%, 54%), hsl(38, 70%, 45%));
+      --gradient-blue: linear-gradient(135deg, hsl(213, 85%, 55%), hsl(225, 80%, 45%));
+      --shadow-gold-glow: 0 0 30px -6px hsl(42 75% 54% / 0.35);
+      --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { border-color: hsl(var(--border)); box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+      font-family: var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    ::selection { background: hsl(var(--gold) / 0.85); color: hsl(var(--accent-foreground)); }
+
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.01em; margin: 0; }
+    .font-display { font-family: var(--font-display); }
+    .font-body { font-family: var(--font-body); }
+    .font-mono { font-family: var(--font-mono); }
+    .accent { font-family: var(--font-accent); font-style: italic; font-weight: 500; letter-spacing: 0; }
+    .gradient-text-gold { background: var(--gradient-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .card-glass { background: var(--gradient-card); border: 1px solid hsl(var(--navy-border)); }
+    .text-gold { color: hsl(var(--gold)); }
+
+    .eyebrow { font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: hsl(var(--gold)); display: inline-flex; align-items: center; gap: 0.6rem; }
+    .mono-note { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: hsl(var(--muted-foreground)); }
+
+    .headline-hero { font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1.02; font-weight: 500; }
+
+    .margin-note { position: absolute; left: 1.4rem; top: 50%; transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl; font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.34em; text-transform: uppercase; color: hsl(var(--muted-foreground) / 0.7); display: none; }
+    @media (min-width: 1280px) { .margin-note { display: block; } }
+
+    .btn-gold { background: var(--gradient-gold); color: hsl(var(--accent-foreground)); transition: transform 0.28s var(--ease-out-soft), box-shadow 0.28s ease; }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: var(--shadow-gold-glow); }
+    .btn-gold:active { transform: translateY(0); }
+    .btn-line { border: 1px solid hsl(var(--border)); color: hsl(var(--foreground)); transition: border-color 0.28s ease, background 0.28s ease, transform 0.28s var(--ease-out-soft); }
+    .btn-line:hover { border-color: hsl(var(--gold) / 0.5); background: hsl(var(--navy-light)); transform: translateY(-2px); }
+    .link-underline { position: relative; }
+    .link-underline::after { content: ""; position: absolute; left: 0; bottom: -3px; height: 1px; width: 100%; background: hsl(var(--gold)); transform: scaleX(0); transform-origin: right; transition: transform 0.32s var(--ease-out-soft); }
+    .link-underline:hover::after { transform: scaleX(1); transform-origin: left; }
+    a:focus-visible, button:focus-visible { outline: 2px solid hsl(var(--gold)); outline-offset: 2px; }
+
+    #site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 60; border-bottom: 1px solid transparent; transition: background 0.35s ease, border-color 0.35s ease; }
+    #site-header.settled { background: hsl(220 52% 5% / 0.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: hsl(var(--border)); }
+    #read-progress { position: absolute; left: 0; bottom: -1px; height: 1px; width: 100%; background: var(--gradient-gold); transform: scaleX(0); transform-origin: left; }
+
+    .tier { background: var(--gradient-card); border: 1px solid hsl(var(--navy-border)); padding: 1.75rem; position: relative; transition: transform 0.35s var(--ease-out-soft), border-color 0.35s ease, box-shadow 0.35s ease; }
+    .tier:hover { transform: translateY(-5px); border-color: hsl(var(--gold) / 0.45); box-shadow: 0 18px 44px -18px hsl(220 60% 2% / 0.9); }
+    .tier--featured { border-color: hsl(var(--gold) / 0.55); box-shadow: 0 0 44px -14px hsl(var(--gold) / 0.3); }
+
+    .ledger { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: hsl(var(--border)); border: 1px solid hsl(var(--navy-border)); align-content: start; }
+    .ledger-cell { background: hsl(220 45% 8%); padding: 1.15rem 1.1rem; }
+    @media (max-width: 30rem) { .ledger { grid-template-columns: 1fr; } }
+
+    .step-num { font-family: var(--font-mono); font-size: 0.8rem; color: hsl(var(--gold)); }
+
+    /* The lead answer sits in its own rule so it reads as a definition, both to a
+       skimming human and to anything extracting a short answer from the page. */
+    .answer-block { border-left: 2px solid hsl(var(--gold)); padding-left: 1.6rem; max-width: 46rem; }
+    .answer-block p { font-family: var(--font-body); font-size: 1.125rem; line-height: 1.65; color: hsl(var(--foreground)); margin: 0; }
+
+    /* Wide by nature. The wrapper scrolls on its own so the page body never does. */
+    .cmp-wrap { overflow-x: auto; border: 1px solid hsl(var(--navy-border)); -webkit-overflow-scrolling: touch; }
+    .cmp-table { width: 100%; min-width: 52rem; border-collapse: collapse; }
+    .cmp-table caption { text-align: left; padding: 1rem 1.15rem; font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: hsl(var(--muted-foreground)); border-bottom: 1px solid hsl(var(--border)); }
+    .cmp-table th, .cmp-table td { padding: 1rem 1.15rem; text-align: left; vertical-align: top; border-bottom: 1px solid hsl(var(--border)); font-size: 0.9rem; line-height: 1.55; font-weight: 400; }
+    .cmp-table thead th { font-family: var(--font-mono); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: hsl(var(--gold)); background: hsl(var(--navy-light)); }
+    .cmp-table tbody th { font-family: var(--font-display); font-size: 1rem; font-weight: 500; color: hsl(var(--foreground)); width: 20%; }
+    .cmp-table tbody td { color: hsl(var(--muted-foreground)); }
+    .cmp-table .col-mine { background: hsl(42 75% 54% / 0.05); color: hsl(var(--foreground)); }
+    .cmp-table thead .col-mine { background: hsl(42 75% 54% / 0.13); }
+    .cmp-table tbody tr:last-child th, .cmp-table tbody tr:last-child td { border-bottom: 0; }
+
+    .faq-item { border-top: 1px solid hsl(var(--border)); padding: 2rem 0; }
+    .faq-item:last-child { border-bottom: 1px solid hsl(var(--border)); }
+
+    .js [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity 0.9s var(--ease-out-soft), transform 0.9s var(--ease-out-soft); }
+    .js [data-reveal].in-view { opacity: 1; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js [data-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .btn-gold:hover, .btn-line:hover, .tier:hover { transform: none; }
+    }
+  </style>
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
+  <link rel="stylesheet" href="/tailwind.css">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Custom Website vs Shopify Theme vs Wix or Squarespace: What Each One Costs and Where Each One Stops",
+  "description": "A cost and capability comparison of the three ways to get a website live: buying a Shopify theme, using a website builder like Wix or Squarespace, or having a site hand coded.",
+  "url": "https://www.thestatusq.io/custom-website-vs-shopify-theme-vs-website-builder",
+  "datePublished": "2026-08-15",
+  "dateModified": "2026-08-15",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Quinn Crowell",
+    "url": "https://www.linkedin.com/in/quinnctsq",
+    "jobTitle": "Founder",
+    "worksFor": { "@type": "ProfessionalService", "name": "TheStatusQ" }
+  },
+  "publisher": {
+    "@type": "ProfessionalService",
+    "name": "TheStatusQ",
+    "url": "https://www.thestatusq.io"
+  },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.thestatusq.io/custom-website-vs-shopify-theme-vs-website-builder" }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is a custom website worth it compared to a Shopify theme?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is worth it when the site has to do something a theme was not built to do. A premium Shopify theme costs $180 to $400 once and covers a standard catalogue store well. A custom build starts at $1,500 for a single landing page and $8,000 to $15,000 for a full multi page site. Pay the difference when you need a specific conversion path, a custom product configurator, unusual content, or page speed a heavy theme cannot reach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a Shopify theme cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Premium themes on the Shopify Theme Store generally run $180 to $400 as a one time purchase, with a few popular ones priced slightly above that. Shopify also publishes free first party themes. The theme price is separate from the Shopify subscription itself and from any apps the theme expects you to install."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Wix or Squarespace cheaper than a custom site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Much cheaper up front and not always cheaper over time. Squarespace's Core plan is about $29 a month and Wix's Business plan about $39 a month on annual billing, which is roughly $350 to $470 a year, forever. A custom landing page is $1,500 once and then costs only hosting. Over five years the totals converge, though a builder still wins on cash flow in year one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I not pay for a custom website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you do not yet know what the site needs to say. A custom build turns decisions into code, so it is the wrong purchase while positioning, offers and pricing are still moving. Launch on a theme or a builder, sell something, learn what converts, then build the custom version around what you learned."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I own a custom website if I stop working with the agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You should own it completely. Ask before signing whether the code is delivered to a repository you control, whether hosting is in your account, and whether anything depends on a licence held by the builder. With a theme or a builder you own your content but you are renting the platform, and moving off it means rebuilding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does page speed actually affect sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It affects both ranking and conversion, and it is one of the few site qualities Google measures publicly through Core Web Vitals. The practical difference between a theme and a hand coded page is usually how much unused JavaScript and how many third party apps load on every view. A theme carrying a page builder plus six apps is doing far more work per visit than a page built only from what it needs."
+      }
+    }
+  ]
+}
+  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X30WC5BPV1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X30WC5BPV1');
+</script>
+</head>
+<body class="bg-background text-foreground">
+
+  <header id="site-header">
+    <div class="max-w-[88rem] mx-auto px-6 lg:px-10 h-[4.25rem] flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="/" class="font-display text-2xl font-semibold tracking-tight text-foreground">The<span class="gradient-text-gold">StatusQ</span></a>
+        <span class="mono-note border border-gold/30 px-2 py-0.5 hidden sm:inline text-gold">[ AGENCY ]</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+        <a href="/#services" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Services</a>
+        <a href="/pricing" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Pricing</a>
+        <a href="/#ai-automation" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">AI</a>
+        <a href="/#results" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Results</a>
+        <a href="/#process" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">Process</a>
+        <a href="/#faq" class="link-underline font-mono text-[0.68rem] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
+      </nav>
+      <a href="/#contact" class="inline-flex items-center gap-2 px-5 py-2 text-[0.7rem] font-mono uppercase tracking-[0.14em] btn-gold">Start a Project</a>
+    </div>
+    <span id="read-progress" aria-hidden="true"></span>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO + ANSWER FIRST ===================== -->
+    <section class="pt-28 pb-14 lg:pt-36 lg:pb-20 relative">
+      <span class="margin-note">Website Design &amp; Build</span>
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">Comparison</p>
+        <h1 class="headline-hero mb-8 max-w-4xl">Custom website vs Shopify theme vs <span class="gradient-text-gold">Wix or Squarespace</span></h1>
+        <div class="answer-block mb-9">
+          <p>
+            A premium Shopify theme costs $180 to $400 as a one time purchase. Squarespace's Core plan is about $29 a month and Wix's Business plan about $39 a month on annual billing. A hand coded landing page from TheStatusQ is $1,500, and a full custom site of five to ten pages is $8,000 to $15,000. Themes and builders win on cost until the site has to do something specific, at which point they stop being cheaper and start being a ceiling.
+          </p>
+        </div>
+        <p class="font-body text-base leading-relaxed text-muted-foreground max-w-2xl mb-3">
+          What follows is where each option is genuinely the correct purchase, and the specific point at which each one runs out.
+        </p>
+        <p class="mono-note">Last updated 15 August 2026 · Written by Quinn Crowell, founder of TheStatusQ</p>
+        <div class="flex flex-wrap gap-4 mt-9">
+          <a href="/#contact" class="inline-flex items-center gap-2 px-6 py-3 text-[0.72rem] font-mono uppercase tracking-[0.14em] btn-gold">Start a Project →</a>
+          <a href="/website-design" class="inline-flex items-center gap-2 px-6 py-3 text-[0.72rem] font-mono uppercase tracking-[0.14em] btn-line">See the Build Service</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TABLE ===================== -->
+    <section id="compared" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">01</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-10">What does each route cost, side by side?</h2>
+        <div class="cmp-wrap" data-reveal>
+          <table class="cmp-table">
+            <caption>Website build routes compared. Platform prices are list prices as published in August 2026.</caption>
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">Website builder</th>
+                <th scope="col">Shopify theme</th>
+                <th scope="col" class="col-mine">Hand coded build</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Up front cost</th>
+                <td>Nothing beyond the subscription</td>
+                <td>$180 to $400 once for a premium theme, or free for a first party theme</td>
+                <td class="col-mine">$1,500 for a landing page, $8,000 to $15,000 for a five to ten page site</td>
+              </tr>
+              <tr>
+                <th scope="row">Recurring cost</th>
+                <td>About $29 a month on Squarespace Core, about $39 a month on Wix Business, annual billing</td>
+                <td>The Shopify subscription, plus any apps the theme expects</td>
+                <td class="col-mine">Hosting only. An optional $250 a month retainer covers hosting, security and three content updates</td>
+              </tr>
+              <tr>
+                <th scope="row">Time to live</th>
+                <td>A day to a week</td>
+                <td>A few days once products and photography exist</td>
+                <td class="col-mine">About a week for a landing page, two to four weeks for a multi page site</td>
+              </tr>
+              <tr>
+                <th scope="row">How much you can change</th>
+                <td>Whatever the editor exposes, and no further</td>
+                <td>Theme settings plus Liquid edits if you can write them</td>
+                <td class="col-mine">Everything, because there is no template underneath</td>
+              </tr>
+              <tr>
+                <th scope="row">Page weight and speed</th>
+                <td>Heavy by design, since the editor ships with the page</td>
+                <td>Varies widely, and gets worse with every app installed</td>
+                <td class="col-mine">Only what the page needs is loaded</td>
+              </tr>
+              <tr>
+                <th scope="row">Selling products</th>
+                <td>Built in, with platform limits on checkout</td>
+                <td>Shopify checkout, which is the strongest part of the platform</td>
+                <td class="col-mine">Usually still Shopify for checkout, with the front end built around it</td>
+              </tr>
+              <tr>
+                <th scope="row">If you want to move later</th>
+                <td>You rebuild. Content exports, design does not</td>
+                <td>Content stays on Shopify, the theme is replaced</td>
+                <td class="col-mine">The code is yours in your own repository</td>
+              </tr>
+              <tr>
+                <th scope="row">Best fit</th>
+                <td>A first site, a portfolio, a business testing whether it needs a site at all</td>
+                <td>A standard catalogue store with normal products and a normal buying path</td>
+                <td class="col-mine">A specific conversion path, an unusual product, or a brand where the site is the differentiator</td>
+              </tr>
+              <tr>
+                <th scope="row">Main risk</th>
+                <td>You outgrow it and cannot extend it</td>
+                <td>App creep quietly ruins the speed you bought it for</td>
+                <td class="col-mine">You pay for flexibility before you know what to do with it</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="font-body text-sm text-muted-foreground mt-5 max-w-3xl">
+          Platform prices are the published list prices as of August 2026 and change without notice. Custom build prices are TheStatusQ's own published rates, which are on the <a href="/pricing" class="link-underline text-gold">pricing page</a> in full.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== BUILDERS ===================== -->
+    <section id="builders" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">02</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">What Wix and Squarespace are genuinely good at</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">They solve the hardest problem a new business has, which is getting something credible online this week without hiring anyone.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Both handle hosting, security patching, SSL, mobile layouts and backups without you thinking about any of it. For a service business that needs five pages and a contact form, or for a founder validating whether there is demand at all, that is the correct purchase and paying more would be a mistake.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">The cost is worth stating honestly. Squarespace Core sits around $29 a month and Wix Business around $39 a month on annual billing, which is roughly $350 to $470 a year for as long as the site exists. That is not expensive, but it never stops, and it buys a site you cannot take with you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THEMES ===================== -->
+    <section id="themes" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">03</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-6">What a Shopify theme gives you, and where it stops</h2>
+        <p class="font-body text-lg text-muted-foreground mb-10 max-w-3xl">A premium theme at $180 to $400 is one of the best value purchases in ecommerce. It is also the thing most stores outgrow first, and usually for the same four reasons.</p>
+        <div class="ledger" data-reveal>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">Every competitor bought the same one</h3><p class="font-body text-muted-foreground leading-relaxed">The popular themes are popular. A customer comparing three stores in three tabs can be looking at the same layout three times, which quietly removes the reason to pick you.</p></div>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">App creep</h3><p class="font-body text-muted-foreground leading-relaxed">Reviews, upsells, popups, a chat widget and a currency switcher each add scripts to every page. The fast theme you tested is not the site your customers load six months later.</p></div>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">The layout you need is not a setting</h3><p class="font-body text-muted-foreground leading-relaxed">A theme exposes the choices its author anticipated. The moment your product needs a comparison table, a sizing tool or a specific proof sequence, you are editing Liquid or you are not doing it.</p></div>
+          <div class="ledger-cell"><h3 class="font-display text-xl mb-2">Updates fight your edits</h3><p class="font-body text-muted-foreground leading-relaxed">Once someone has customised the theme code, taking the developer's update means reapplying those changes. Many stores stop updating, which is how a theme ages badly.</p></div>
+        </div>
+        <p class="font-body text-muted-foreground leading-relaxed mt-8 max-w-3xl">None of that argues against buying a theme. It argues for buying one deliberately, keeping the app list short, and treating the day you need a real layout change as the day the theme has done its job.</p>
+      </div>
+    </section>
+
+    <!-- ===================== CUSTOM ===================== -->
+    <section id="custom" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">04</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">What custom actually means</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Custom is a word that has been used to sell drag and drop editors, so it is worth being specific. A hand coded build means there is no template underneath the page. The markup exists because someone decided each part of it should.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">In practice that changes three things. The page loads only the code it uses, so speed is a design decision rather than something you hope survives. The layout can follow the argument you are making instead of the order a template imposed. And the whole thing lives in a repository you control, so it can be edited by anyone competent rather than only by the person who built it.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">The honest limit is that custom buys capability, not results. A hand coded page with weak copy converts worse than a good theme with strong copy. That is why <a href="/email-copywriting" class="link-underline text-gold">the writing</a> is treated as part of the build here rather than as something the client supplies afterwards.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SPEED ===================== -->
+    <section id="speed" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">05</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">Speed is the difference you can actually measure</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Most arguments about site quality are matters of taste. Speed is not, because Google publishes the measurement in Core Web Vitals and anyone can run it on your URL in under a minute.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">The mechanism is unglamorous. A builder ships its editing runtime to every visitor. A theme ships every feature its author included, whether your store uses it or not, and then each installed app adds its own scripts on top. A page built from only what it needs skips all of that, which is why the gap is usually large rather than marginal.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">Run your own site through PageSpeed Insights before deciding anything on this page. If it already scores well, speed is not your reason to rebuild and you should not let anyone sell it to you as one.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== OWNERSHIP ===================== -->
+    <section id="ownership" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">06</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">Who owns what when you want to leave</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">On a builder you own your words and your images. You do not own the site. Moving to another platform means rebuilding the design from scratch, which is a real cost that never appears in the monthly price.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">On Shopify your products, orders and customers stay with you and the theme is replaceable, which is a genuinely good position to be in. The lock in is to Shopify rather than to any one designer.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">On a custom build the code should be delivered to a repository in your name, hosted in your own account. Ask about that before you sign anything. A build that only the builder can deploy is a subscription wearing a project's clothes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DECISION ===================== -->
+    <section id="decide" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">07</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-10">Which one should you pick?</h2>
+        <div class="grid md:grid-cols-3 gap-6" data-reveal>
+          <div class="tier"><p class="mono-note mb-3">No site yet</p><h3 class="font-display text-2xl mb-3 text-gold">Builder or free theme</h3><p class="font-body text-muted-foreground leading-relaxed">Get something live and sell something. You cannot brief a custom build on a business you have not tested, and a designer cannot invent the answer for you.</p></div>
+          <div class="tier tier--featured"><p class="mono-note mb-3">Selling, and converting badly</p><h3 class="font-display text-2xl mb-3 text-gold">One custom landing page</h3><p class="font-body text-muted-foreground leading-relaxed">$1,500 buys the page that carries your main offer, built around the argument rather than the template. Keep the theme for the catalogue while you find out whether the page works.</p></div>
+          <div class="tier"><p class="mono-note mb-3">Site is the constraint</p><h3 class="font-display text-2xl mb-3 text-gold">Full custom build</h3><p class="font-body text-muted-foreground leading-relaxed">$8,000 to $15,000 when the theme is actively in the way, when speed is measurably costing you, or when the brand needs to look like nobody else in the category.</p></div>
+        </div>
+        <p class="font-body text-muted-foreground leading-relaxed mt-8 max-w-3xl">The test that settles it: write down the one thing your site needs to do that it currently cannot. If you can name it in a sentence, a custom build is a real solution to a real problem. If you cannot, the honest answer is that a theme and better copy will get you further for less money.</p>
+      </div>
+    </section>
+
+    <!-- ===================== OURS ===================== -->
+    <section id="ours" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4"><p class="eyebrow mb-5">08</p><h2 class="font-display text-3xl lg:text-5xl leading-[1.05]">What TheStatusQ builds and charges</h2></div>
+        <div class="lg:col-span-7 lg:col-start-6">
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">Static and Next.js builds, hand coded, with the copy written as part of the work rather than pasted in at the end. A single <a href="/website-design" class="link-underline text-gold">landing page</a> is $1,500. A full website redesign of five to ten pages for a commercial client is $8,000 to $15,000. A starter funnel bundling a landing page, a Klaviyo setup with UTM tracking and a five email sequence is $2,800.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground mb-5">A full package with a site, copy, a video sales letter script and a five email sequence runs $3,500 to $5,000, or $3,000 to $4,500 without the script. Ongoing hosting, security and three content updates a month is $250. Every number is published on the <a href="/pricing" class="link-underline text-gold">pricing page</a> with nothing behind a form.</p>
+          <p class="font-body text-lg leading-relaxed text-muted-foreground">Builds run an automated accessibility check before they ship and target WCAG 2.1 Level AA. Accessibility overlay widgets are not installed, because they do not fix the underlying markup.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section id="faq" class="py-16 lg:py-24 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-5">09</p>
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-10">Frequently asked questions</h2>
+        <div class="max-w-4xl">
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">Is a custom website worth it compared to a Shopify theme?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">It is worth it when the site has to do something a theme was not built to do. A premium Shopify theme costs $180 to $400 once and covers a standard catalogue store well. A custom build starts at $1,500 for a single landing page and $8,000 to $15,000 for a full multi page site. Pay the difference when you need a specific conversion path, a custom product configurator, unusual content, or page speed a heavy theme cannot reach.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">How much does a Shopify theme cost?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">Premium themes on the Shopify Theme Store generally run $180 to $400 as a one time purchase, with a few popular ones priced slightly above that. Shopify also publishes free first party themes. The theme price is separate from the Shopify subscription itself and from any apps the theme expects you to install.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">Is Wix or Squarespace cheaper than a custom site?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">Much cheaper up front and not always cheaper over time. Squarespace's Core plan is about $29 a month and Wix's Business plan about $39 a month on annual billing, which is roughly $350 to $470 a year, forever. A custom landing page is $1,500 once and then costs only hosting. Over five years the totals converge, though a builder still wins on cash flow in year one.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">When should I not pay for a custom website?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">When you do not yet know what the site needs to say. A custom build turns decisions into code, so it is the wrong purchase while positioning, offers and pricing are still moving. Launch on a theme or a builder, sell something, learn what converts, then build the custom version around what you learned.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">Do I own a custom website if I stop working with the agency?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">You should own it completely. Ask before signing whether the code is delivered to a repository you control, whether hosting is in your account, and whether anything depends on a licence held by the builder. With a theme or a builder you own your content but you are renting the platform, and moving off it means rebuilding.</p></div>
+          <div class="faq-item"><h3 class="font-display text-2xl mb-3">Does page speed actually affect sales?</h3><p class="font-body text-lg leading-relaxed text-muted-foreground">It affects both ranking and conversion, and it is one of the few site qualities Google measures publicly through Core Web Vitals. The practical difference between a theme and a hand coded page is usually how much unused JavaScript and how many third party apps load on every view. A theme carrying a page builder plus six apps is doing far more work per visit than a page built only from what it needs.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section id="cta" class="py-20 lg:py-28 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10 text-center">
+        <h2 class="font-display text-3xl lg:text-5xl leading-[1.05] mb-6 max-w-3xl mx-auto">Send me your current site and the one thing it cannot do, and I will tell you whether that needs a rebuild or a rewrite.</h2>
+        <a href="/#contact" class="inline-flex items-center gap-2 px-7 py-3.5 text-[0.72rem] font-mono uppercase tracking-[0.14em] btn-gold mt-4">Start a Project →</a>
+      </div>
+    </section>
+
+    <!-- ===================== RELATED ===================== -->
+    <section class="py-14 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <p class="eyebrow mb-6">Keep reading</p>
+        <div class="grid md:grid-cols-3 gap-6">
+          <a href="/website-design" class="card-glass p-6 block hover:border-gold/40 transition-colors"><h3 class="font-display text-xl mb-2 text-gold">Website design and build</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Hand coded sites and landing pages, cost by scope, and what happens after launch.</p></a>
+          <a href="/pricing" class="card-glass p-6 block hover:border-gold/40 transition-colors"><h3 class="font-display text-xl mb-2 text-gold">The full rate card</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">Every price in plain numbers, what is excluded, and what you own afterwards.</p></a>
+          <a href="/klaviyo-agency-vs-freelancer-vs-in-house" class="card-glass p-6 block hover:border-gold/40 transition-colors"><h3 class="font-display text-xl mb-2 text-gold">Agency vs freelancer vs in house</h3><p class="font-body text-sm text-muted-foreground leading-relaxed">What each way of buying marketing work actually costs.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <section class="pb-16 border-t" style="border-color:hsl(var(--border))">
+      <div class="max-w-[88rem] mx-auto px-6 lg:px-10">
+        <div class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3"><a href="/" class="font-display text-lg font-semibold text-foreground">The<span class="gradient-text-gold">StatusQ</span></a></div>
+          <div class="flex flex-wrap gap-x-6 gap-y-3 items-center">
+            <a href="/pricing" class="link-underline mono-note hover:text-foreground transition-colors">PRICING</a>
+            <a href="/privacy" class="link-underline mono-note hover:text-foreground transition-colors">PRIVACY</a>
+            <a href="/accessibility" class="link-underline mono-note hover:text-foreground transition-colors">ACCESSIBILITY</a>
+            <span class="mono-note">© <span id="year"></span> THESTATUSQ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      var y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+
+      var header = document.getElementById("site-header");
+      var progress = document.getElementById("read-progress");
+      var ticking = false;
+      window.addEventListener("scroll", function () {
+        if (ticking) return;
+        ticking = true;
+        window.requestAnimationFrame(function () {
+          var sc = window.scrollY || document.documentElement.scrollTop;
+          header.classList.toggle("settled", sc > 24);
+          var max = document.documentElement.scrollHeight - window.innerHeight;
+          progress.style.transform = "scaleX(" + (max > 0 ? Math.min(1, sc / max) : 0) + ")";
+          ticking = false;
+        });
+      }, { passive: true });
+
+      var revealEls = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add("in-view"); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.16, rootMargin: "0px 0px -7% 0px" });
+        revealEls.forEach(function (el) { io.observe(el); });
+      } else {
+        revealEls.forEach(function (el) { el.classList.add("in-view"); });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -35,3 +35,13 @@ Builds run an automated accessibility check before they ship and target WCAG 2.1
 - [Website design and build](https://www.thestatusq.io/website-design): hand-coded sites and landing pages, cost by scope, and what happens after launch.
 - [AI receptionist and automation](https://www.thestatusq.io/ai-automation): what the phone assistant does, who it suits, and what it costs.
 - [VSL scripts](https://www.thestatusq.io/vsl-scripts): what a video sales letter script is, what it costs, what is delivered, and when it is the wrong thing to buy.
+
+## Comparisons
+
+These pages compare the options a buyer is actually weighing up, including the cases where the answer is not to hire us. Prices quoted on them match the pricing page.
+
+- [Klaviyo agency vs freelancer vs in house](https://www.thestatusq.io/klaviyo-agency-vs-freelancer-vs-in-house): what each delivery model costs, including Glassdoor's 2026 average United States email marketing manager salary of $102,544, and the revenue point at which the recommendation changes.
+- [Custom website vs Shopify theme vs Wix or Squarespace](https://www.thestatusq.io/custom-website-vs-shopify-theme-vs-website-builder): premium Shopify themes at $180 to $400, builder subscriptions at roughly $29 to $39 a month, and custom builds from $1,500, with the point at which each option runs out.
+- [AI receptionist vs answering service vs voicemail](https://www.thestatusq.io/ai-receptionist-vs-answering-service-vs-voicemail): flat $800 a month against per minute answering service billing of roughly $0.65 to $1.75, and the call volume at which each becomes correct.
+- [Klaviyo flow setup vs email retainer](https://www.thestatusq.io/klaviyo-flow-setup-vs-email-retainer): which of the two to buy first, using Klaviyo's 2026 benchmark finding that flows produce close to 41 percent of email revenue from 5.3 percent of sends.
+- [Copywriter vs AI copywriting tools](https://www.thestatusq.io/copywriter-vs-ai-copywriting-tools): what a $39 to $59 a month writing tool does well, where it costs a business money, and how Google's scaled content abuse policy applies.
